@@ -1,0 +1,274 @@
+{
+    "cities": [
+        {
+            "name": "Leon",
+            "title": {
+                "en": "Leon is a really cute city, behind the cathedral you can find the best food of your journey. Chicken fried on the street!"
+            },
+            "lat": 12.431553,
+            "lng": -86.872215,
+            "zoom": 10,
+            "pictures": [
+                {
+                    "url": "/leon/leon1.JPG",
+                    "alt": "",
+                    "title": {
+                        "en": "Going to el Cerro Negro"
+                    },
+                    "subtitle": "",
+                    "tags": [
+                        "city"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Salinas Grandes",
+            "title": {
+                "en": "Quietness is not boredom. And if you need a proof go to Salinas Grandes for two weeks.",
+                "fr": "C'est un peu la ville improbable de mon sejour. Des marés salants séparent la ville de la cote. L'ambiance y est chaleureuse, tout comme les vagues. Elles y sont ni trop calmes ni trop ´lectriques"
+            },
+            "lat": 12.2678382,
+            "lng": -86.8533407,
+            "zoom": 11,
+            "pictures": [
+                {
+                    "url": "/salinas grandes/1.JPG",
+                    "alt": "Two cows looking at me",
+                    "title": {
+                        "en": "",
+                        "fr": "Ces demoiselles ne craignent pas la chaleur, au contraire elles profitent de ce calme pour se trouver petit bout de verdure non exploré."
+                    },
+                    "subtitle": "",
+                    "tags": [
+                        "beach",
+                        "animals"
+                    ]
+                },
+                {
+                    "url": "/salinas grandes/2.JPG",
+                    "alt": "Un bras tatoué",
+                    "title": {
+                        "en": "",
+                        "fr": ""
+                    },
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/salinas grandes/3.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/salinas grandes/4.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/salinas grandes/5.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/salinas grandes/6.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/salinas grandes/7.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "name": "Managua",
+            "lat": 12.136389,
+            "lng": -86.251389,
+            "zoom": 12,
+            "pictures": [
+                {
+                    "url": "/managua/1.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/managua/2.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/managua/3.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/managua/4.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/managua/5.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/managua/6.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "name": "Granada",
+            "lat": 11.9288488,
+            "lng": -85.977309,
+            "zoom": 13,
+            "pictures": [
+                {
+                    "url": "/granada/1.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/granada/2.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/granada/3.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/granada/4.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/granada/5.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/granada/6.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/granada/7.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "name": "San Juan Del Sur",
+            "lat": 11.2600024,
+            "lng": -85.8857705,
+            "zoom": 13,
+            "pictures": [
+                {
+                    "url": "/san juan del sur/1.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/san juan del sur/2.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/san juan del sur/3.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/san juan del sur/4.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/san juan del sur/5.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/san juan del sur/6.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/san juan del sur/7.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/san juan del sur/8.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                },
+                {
+                    "url": "/san juan del sur/9.JPG",
+                    "alt": "",
+                    "title": "",
+                    "subtitle": "",
+                    "tags": []
+                }
+            ]
+        }
+    ]
+}

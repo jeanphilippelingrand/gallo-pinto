@@ -3,11 +3,11 @@
 
 
     <div  id="feed">
-      <feed-container v-bind:cities=cities v-model=currentIndex></feed-container>
+      <feed-container v-bind:cities=cities v-model=currentIndex ref="feed-component"></feed-container>
     </div>
 
     <div id="map">
-    <map-container v-bind:cities=cities v-bind:currentIndex=currentIndex></map-container>
+      <map-container v-bind:cities=cities v-bind:currentIndex=currentIndex v-on:cityClicked="handleCityClicked"></map-container>
     </div>
 
     <floating-menu v-if="!displayMenu" v-bind:cities=cities v-bind:currentIndex=currentIndex id="menu"></floating-menu>
@@ -42,19 +42,26 @@ export default {
     "map-container": Map,
     "floating-menu": Menu
   },
-  computed: {
-    displayMenu: function() {
-      return this.currentIndex == 0;
-    }
-  },
   data: function() {
     return {
       cities: {
         value: [],
         type: Array
       },
-      currentIndex: 0
+      currentIndex: 0,
+      clickedCity: 0
     };
+  },
+  computed: {
+    displayMenu: function() {
+      return this.currentIndex == 0;
+    }
+  },
+  methods: {
+    handleCityClicked: function(index) {
+      this.scrollTo(index);
+    },
+    scrollTo: Function
   },
   created: function() {
     this.cities = require("../../static/data.json").cities;
@@ -64,6 +71,9 @@ export default {
     //     this.cities = data.cities;
     //   })
     // });
+  },
+  mounted: function() {
+    this.scrollTo = this.$refs["feed-component"].$scrollTo;
   }
 };
 </script>

@@ -7,7 +7,7 @@
             },
             "lat": 12.431553,
             "lng": -86.872215,
-            "zoom": 10,
+            "zoom": 9,
             "pictures": [
                 {
                     "url": "/leon/leon1.JPG",
@@ -30,7 +30,7 @@
             },
             "lat": 12.2678382,
             "lng": -86.8533407,
-            "zoom": 11,
+            "zoom": 9,
             "pictures": [
                 {
                     "url": "/salinas grandes/1.JPG",
@@ -96,7 +96,7 @@
             "name": "Managua",
             "lat": 12.136389,
             "lng": -86.251389,
-            "zoom": 12,
+            "zoom": 9,
             "pictures": [
                 {
                     "url": "/managua/1.JPG",
@@ -146,7 +146,7 @@
             "name": "Granada",
             "lat": 11.9288488,
             "lng": -85.977309,
-            "zoom": 13,
+            "zoom": 9,
             "pictures": [
                 {
                     "url": "/granada/1.JPG",
@@ -203,7 +203,7 @@
             "name": "San Juan Del Sur",
             "lat": 11.2600024,
             "lng": -85.8857705,
-            "zoom": 13,
+            "zoom": 9,
             "pictures": [
                 {
                     "url": "/san juan del sur/1.JPG",

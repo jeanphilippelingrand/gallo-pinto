@@ -14,7 +14,7 @@
       :position="m.position"
       :clickable="true"
       :draggable="true"
-      @click="center=m.position"
+      @click="handleMarkerClick(m.city,index)"
     ></gmap-marker>
   </gmap-map>
 
@@ -39,6 +39,22 @@ export default {
     },
     currentIndex: 0
   },
+  data() {
+    return {
+      zoom: this.cities ? this.cities[0].zoom : 7,
+      animatedCity: {
+        center: {
+          lat: 12.8649313, //this.cities[0].lat,
+          lng: -87.2683805 //this.cities[0].lng
+        }
+      }
+    };
+  },
+  methods: {
+    handleMarkerClick: function(city, index) {
+      this.$emit("cityClicked", index);
+    }
+  },
   computed: {
     currentCity: function() {
       return this.cities ? this.cities[this.currentIndex] : {};
@@ -47,7 +63,8 @@ export default {
       return this.cities
         ? this.cities.map(city => {
             return {
-              position: { lat: city.lat, lng: city.lng, icon: "pin.png" }
+              city: city,
+              position: { lat: city.lat, lng: city.lng }
             };
           })
         : [];
@@ -89,17 +106,6 @@ export default {
 
       animate();
     }
-  },
-  data() {
-    return {
-      zoom: this.cities ? this.cities[0].zoom : 7,
-      animatedCity: {
-        center: {
-          lat: 12.8649313, //this.cities[0].lat,
-          lng: -87.2683805 //this.cities[0].lng
-        }
-      }
-    };
   },
   created() {
     let tweenScript = document.createElement("script");

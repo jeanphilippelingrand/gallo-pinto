@@ -1,7 +1,11 @@
 <template>
-  <div id="img-container" v-bind:class="{ big: isBig }" scroll="no">
-<img v-lazy="imgURL" v-on:click="handleImageClick()" >
-  <p class="photo-title">{{pic.title && (pic.title.en || pic.title.fr)}}</p>
+  <div class="img-container" v-bind:class="{ big: isBig }" scroll="no">
+     <div class="picture-button-container" v-if="mouseOver">
+      <button  v-on:click="handleCloseBtnClicked()" class="picture-fullscreen-btn"/>
+    </div>
+<img v-lazy="imgURL" v-on:mouseover="mouseOver=true" v-on:mouseleave="mouseOver=false">
+ 
+  <!-- <p class="photo-title">{{pic.title && (pic.title.en || pic.title.fr)}}</p> -->
 
   </div>
 </template>
@@ -18,7 +22,8 @@ export default {
     return {
       isBig: false,
       effect: false,
-      minimize: true
+      minimize: true,
+      mouseOver: false
     };
   },
   computed: {
@@ -37,7 +42,8 @@ export default {
   },
   methods: {
     handleImageClick: function() {
-      this.isBig = !this.isBig;
+      // this.isBig = !this.isBig;
+      $router.push(`slideshow/`);
     },
     handleScroll: function(event) {
       this.isBig = false;
@@ -58,7 +64,8 @@ img {
   width: 100%;
   height: auto;
 }
-#img-container {
+.img-container {
+  position: relative;
   margin-bottom: 20px;
   background-color: white;
 }
@@ -90,5 +97,22 @@ img {
   font-size: 10px;
   font-weight: 100;
   padding: 5px;
+}
+
+.picture-button-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.picture-fullscreen-btn {
+  background-image: url("../assets/icon_fullscreen.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  opacity: 0.5;
 }
 </style>

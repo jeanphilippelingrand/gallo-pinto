@@ -1,38 +1,36 @@
 <template>
   <div>
-
       <ul style="display:none;" v-scroll-spy-active>
-      <li :id="city.name" class="title" v-for="city in cities" v-bind:data="city"
-           v-bind:key="city.name">
-        <a >
-            <h2>{{city.name}}</h2>
-        </a>
-      </li>
- </ul>
-    <ul v-scroll-spy:data="{ data: 'currentIndex' }">
-      <li :id="city.name+'?lat='+city.lat+'&lng='+city.lng" class="pic" v-for="city in cities" v-bind:data="city"
-           v-bind:key="city.name">
-                       <h1>{{city.name}}</h1>
-                                  <p class="city-title">{{city.title && (city.title.en || city.title.fr)}}
-
-      <div class="pic" v-for="pic in city.pictures" v-bind:data="pic"
-           v-bind:key="pic.imgURL">
-      <pic :pic="pic">
-      </pic>
-      </div>
-      </li>
-  
+        <li :id="city.name" class="title" v-for="city in cities" v-bind:data="city"
+            v-bind:key="city.name">
+          <a >
+              <h2>{{city.name}}</h2>
+          </a>
+        </li>
     </ul>
 
-<div id="end">
-  <h2>C'est ici que le voyage se termine!</h2>
-  <div id="goBackToStartBtn">
-    <a href="`#Leon`">
-        <h3>Repartir au debut</h3>
-    </a>
-  </div>
+    <ul id="scroll-spy-container" v-scroll-spy:data="{ data: 'currentIndex' }">
+      <li :id="city.name+'?lat='+city.lat+'&lng='+city.lng" class="pic" v-for="city in cities" v-bind:data="city"
+           v-bind:key="city.name">
+            <h1>{{city.name}}</h1>
+             <p class="city-title">{{city.title && (city.title.en || city.title.fr)}}
+
+         <div class="pic" v-for="(pic, indexPic) in city.pictures" v-bind:data="pic"
+            v-bind:key="pic.imgURL" v-on:click="handleImageClick(city,indexPic)">
+           <pic :pic="pic" ></pic>
+         </div>
+      </li>
+    </ul>
+
+
+
+  <div id="end">
+    <h2>C'est ici que le voyage se termine!</h2>
+      <div id="goBackToStartBtn" v-on:click="$scrollTo(0)">
+            <h3>Repartir au debut</h3>
+      </div>
+    </div>
 </div>
-  </div>
 
 
 </template>
@@ -57,9 +55,13 @@ export default {
       }
     };
   },
+  methods: {
+    handleImageClick(city, indexPic) {
+      this.$router.push(`/slideshow/${city.name}/${indexPic}`);
+    }
+  },
   watch: {
     currentIndex: function(newVal, oldVal) {
-      // watch it
       this.$emit("input", newVal);
     }
   }
@@ -70,6 +72,9 @@ export default {
 <style scoped>
 ul {
   list-style: none;
+  padding: 0;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 h1 {
   /* margin-top:30px; */
@@ -102,6 +107,7 @@ h2 {
   text-align: justify;
   letter-spacing: 1px;
 }
+
 @media only screen and (max-width: 700px) {
   h1 {
     font-size: 30px;

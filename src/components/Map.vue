@@ -106,15 +106,15 @@ export default {
 
       animate();
     }
-  },
-  created() {
-    let tweenScript = document.createElement("script");
-    tweenScript.setAttribute(
-      "src",
-      "https://cdn.jsdelivr.net/npm/tween.js@16.3.4"
-    );
-    document.head.appendChild(tweenScript);
-  }
+  } //,
+  // created() {
+  //   let tweenScript = document.createElement("script");
+  //   tweenScript.setAttribute(
+  //     "src",
+  //     "https://cdn.jsdelivr.net/npm/tween.js@16.3.4"
+  //   );
+  //   document.head.appendChild(tweenScript);
+  // }
 };
 </script>
 

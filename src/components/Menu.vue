@@ -1,16 +1,15 @@
 <template >
-  <div  id="container" v-on:mouseleave="mouseLeave" v-on:mouseover="mouseOver">
-    <h3 v-if="!active">Menu</h3>
-
-     <ul v-if="active" v-scroll-spy-link>  
-<li :id="city.name" class="title" v-for="(city, index) in cities" v-bind:data="city"
+<div  id="container" v-on:mouseleave="mouseLeave" v-on:mouseover="mouseOver">
+  <h3 v-if="!active">Menu</h3>
+  <ul v-if="active" v-scroll-spy-link>  
+    <li :id="city.name" class="title" v-for="(city, index) in cities" v-bind:data="city"
     v-bind:key="city.name" v-bind:class="{ active: index == currentIndex }">
-  <a :href="`#${city.name}`">
-      <h3>{{city.name}}</h3>
-  </a>
-</li>
-</ul>
-  </div>
+    <a :href="`#${city.name}`">
+    <h3>{{city.name}}</h3>
+    </a>
+    </li>
+  </ul>
+</div>
 </template>
 
 <script>

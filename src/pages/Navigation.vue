@@ -1,42 +1,41 @@
 <template>
-  <div id="body">
+  <div id="navigation-container">
+ <b-navbar fixed="top">
+    <b-navbar-brand tag="h3" class="mb-0">Gallo Pinto</b-navbar-brand>
 
+      <!-- <b-nav-item>
+        <router-link to="/slideshow/leon/leon0.JPG">    
+            Slideshow mode
+        </router-link>
+      </b-nav-item> -->
+      
+        <b-nav-item>
+        <router-link class="navigation-about-btn" to="/gallo-pinto">    
+           About Gallo Pinto
+        </router-link>
+      </b-nav-item>
 
-    <div  id="feed">
+    <!-- <floating-menu v-if="!displayMenu" v-bind:cities=cities v-bind:currentIndex=currentIndex id="menu"></floating-menu> -->
+  </b-navbar>
+
+    <div id="feed">
       <feed-container v-bind:cities=cities v-model=currentIndex ref="feed-component"></feed-container>
     </div>
 
     <div id="map">
       <map-container v-bind:cities=cities v-bind:currentIndex=currentIndex v-on:cityClicked="handleCityClicked"></map-container>
     </div>
-
-    <floating-menu v-if="!displayMenu" v-bind:cities=cities v-bind:currentIndex=currentIndex id="menu"></floating-menu>
-    
-    <!-- <div v-if="false" id="landing-page">
-
-      <h1>NICARAGUA</h1>
-      <h3>Start by start scrolling or choose a city to visit</h3>
-
-            <ul  v-scroll-spy-active v-scroll-spy-link>
-      <li :id="city.name" class="title" v-for="city in cities" v-bind:data="city"
-           v-bind:key="city.name">
-        <a >
-            <h2>{{city.name}}</h2>
-        </a>
-      </li>
- </ul>
-    </div> -->
     
   </div>
 </template>
 
 <script>
-import Feed from "./Feed";
-import Map from "./Map";
-import Menu from "./Menu";
+import Feed from "../components/Feed";
+import Map from "../components/Map";
+import Menu from "../components/Menu";
 
 export default {
-  name: "home",
+  name: "navigation",
   components: {
     "feed-container": Feed,
     "map-container": Map,
@@ -65,12 +64,6 @@ export default {
   },
   created: function() {
     this.cities = require("../../static/data.json").cities;
-    // let url ='/static/data.json';
-    // fetch(url).then(stream =>{
-    // stream.json().then(data => {
-    //     this.cities = data.cities;
-    //   })
-    // });
   },
   mounted: function() {
     this.scrollTo = this.$refs["feed-component"].$scrollTo;
@@ -80,46 +73,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#body {
-  height: 100%;
-  margin: 100ppx;
-  font-size: 20px;
-}
-header {
-  background-color: black;
-  color: white;
-  letter-spacing: 10px;
-  font-size: 20px;
-  width: 100%;
+body {
+  background-color: #fdfafa;
 }
 #feed {
-  width: 60%;
+  width: 70%;
   height: auto;
   position: absolute;
 }
 #map {
-  width: 40%;
+  width: 30%;
   height: 100%;
   position: fixed;
   right: 0;
-}
-#landing-page {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  color: black;
-  background-color: white;
-  text-align: center;
-  padding: 50px;
-}
-
-#menu {
-  position: fixed;
-  width: 60%;
-  background-color: white;
-  top: 0;
-  left: 0;
-  z-index: 100;
 }
 
 h1 {
@@ -149,7 +115,7 @@ h3 {
 
 h3 {
   font-weight: 100;
-  letter-spacing: 2px;
+  letter-spacing: 8px;
 }
 
 h2 {
@@ -158,6 +124,17 @@ h2 {
   margin-bottom: 30px;
   letter-spacing: 2px;
   font-weight: 100;
+}
+
+.navbar {
+  background-color: #fdfafa;
+  padding: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.navigation-about-btn {
+  font-weight: 100;
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -175,10 +152,6 @@ h2 {
   }
   h3 {
     padding: 10px;
-  }
-  #landing-page {
-    padding: 0;
-    padding-top: 40px;
   }
 
   ul {

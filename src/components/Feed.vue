@@ -3,9 +3,9 @@
       <ul style="display:none;" v-scroll-spy-active>
         <li :id="city.name" class="title" v-for="city in cities" v-bind:data="city"
             v-bind:key="city.name">
-          <a >
-              <h2>{{city.name}}</h2>
-          </a>
+            <a>
+                <h2>{{city.name}}</h2>
+            </a>
         </li>
     </ul>
 
@@ -22,14 +22,6 @@
       </li>
     </ul>
 
-
-
-  <div id="end">
-    <h2>C'est ici que le voyage se termine!</h2>
-      <div id="goBackToStartBtn" v-on:click="$scrollTo(0)">
-            <h3>Repartir au debut</h3>
-      </div>
-    </div>
 </div>
 
 

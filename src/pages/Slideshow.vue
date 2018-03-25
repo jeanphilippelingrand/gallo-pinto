@@ -9,11 +9,11 @@
     </div>
     <carousel :perPage="1" :paginationSize="5" :navigateTo="currentIndex" :paginationEnabled="false">
     <slide  v-for="image in images" v-bind:key="image.src">
-        <img :src=image.src>
+        <img class="slideshow-image" :src=image.src>
     </slide>
   </carousel>
-  <!-- <button id="slideshow-left-arrow" class="slideshow-arrow"></button>
-  <button id="slideshow-right-arrow" class="slideshow-arrow"></button> -->
+  <button v-if="currentIndex>0" v-on:click="currentIndex--" id="slideshow-left-arrow" class="slideshow-arrow"></button>
+  <button  v-if="currentIndex<(images.length-1)" v-on:click="currentIndex++"  id="slideshow-right-arrow" class="slideshow-arrow"></button>
 
   </div>
 </template>
@@ -108,7 +108,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 #slideshow-container {
   position: absolute;
   height: 100%;
@@ -129,7 +129,7 @@ export default {
 .VueCarousel-slide {
   height: 100%;
 }
-img {
+.slideshow-image {
   position: relative;
   display: inline-block;
   text-align: center;

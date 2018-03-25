@@ -5,7 +5,7 @@
     </div>
 <img v-lazy="imgURL" v-on:mouseover="mouseOver=true" v-on:mouseleave="mouseOver=false">
  
-  <!-- <p class="photo-title">{{pic.title && (pic.title.en || pic.title.fr)}}</p> -->
+  <p class="photo-title">{{pic.title && (pic.title.en || pic.title.fr)}}</p>
 
   </div>
 </template>

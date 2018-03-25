@@ -11,13 +11,62 @@
             "pictures": [
                 {
                     "url": "/leon/leon1.JPG",
-                    "alt": "",
+                    "alt": "taxi-bikes on the road",
                     "title": {
-                        "en": "Going to el Cerro Negro"
+                        "en": "Taxi-Bike on the road to el Cerro Negro"
                     },
-                    "subtitle": "",
                     "tags": [
-                        "city"
+                        "leon",
+                        "city",
+                        "bike",
+                        "road"
+                    ]
+                },
+                {
+                    "url": "/leon/leon2.JPG",
+                    "alt": "A women on the street carrying a bucket",
+                    "title": {
+                        "en": "Soda on the afternoon"
+                    },
+                    "tags": [
+                        "city",
+                        "woman",
+                        "soda"
+                    ]
+                },
+                {
+                    "url": "/leon/leon3.JPG",
+                    "alt": "Market city shops on the street",
+                    "title": {
+                        "en": "El market"
+                    },
+                    "tags": [
+                        "city",
+                        "market"
+                    ]
+                },
+                {
+                    "url": "/leon/leon4.JPG",
+                    "alt": "Sunset from a volcano",
+                    "title": {
+                        "en": "The sunset from a volcano"
+                    },
+                    "tags": [
+                        "landscape",
+                        "sun",
+                        "sky"
+                    ]
+                },
+                {
+                    "url": "/leon/leon5.JPG",
+                    "alt": "Landscape with volcanos",
+                    "title": {
+                        "en": "Line of volcanos"
+                    },
+                    "tags": [
+                        "landscape",
+                        "volcanos",
+                        "sky"
                     ]
                 }
             ]
@@ -36,10 +85,9 @@
                     "url": "/salinas grandes/1.JPG",
                     "alt": "Two cows looking at me",
                     "title": {
-                        "en": "",
+                        "en": "Looking for shadows",
                         "fr": "Ces demoiselles ne craignent pas la chaleur, au contraire elles profitent de ce calme pour se trouver petit bout de verdure non exploré."
                     },
-                    "subtitle": "",
                     "tags": [
                         "beach",
                         "animals"
@@ -47,46 +95,74 @@
                 },
                 {
                     "url": "/salinas grandes/2.JPG",
-                    "alt": "Un bras tatoué",
+                    "alt": "Tatooed arm",
                     "title": {
-                        "en": "",
+                        "en": "Life is full of lives",
                         "fr": ""
                     },
-                    "subtitle": "",
-                    "tags": []
+                    "tags": [
+                        "people",
+                        "tatoo"
+                    ]
                 },
                 {
                     "url": "/salinas grandes/3.JPG",
-                    "alt": "",
-                    "title": "",
-                    "subtitle": "",
-                    "tags": []
+                    "alt": "Boats going for fishing",
+                    "title": {
+                        "en": "Boats going to night-fishing",
+                        "fr": ""
+                    },
+                    "tags": [
+                        "boats",
+                        "beach",
+                        "fishing"
+                    ]
                 },
                 {
                     "url": "/salinas grandes/4.JPG",
-                    "alt": "",
-                    "title": "",
-                    "subtitle": "",
-                    "tags": []
+                    "alt": "baby turtles going to the watter",
+                    "title": {
+                        "en": "Baby turtles going to the water for the first time",
+                        "fr": ""
+                    },
+                    "tags": [
+                        "turtles",
+                        "sunset",
+                        "beach"
+                    ]
                 },
                 {
                     "url": "/salinas grandes/5.JPG",
-                    "alt": "",
-                    "title": "",
-                    "subtitle": "",
-                    "tags": []
+                    "alt": "A volunteer working with turtles",
+                    "title": {
+                        "en": "Passionate by those little creatures 1",
+                        "fr": ""
+                    },
+                    "tags": [
+                        "people",
+                        "turtles",
+                        "beach"
+                    ]
                 },
                 {
                     "url": "/salinas grandes/6.JPG",
-                    "alt": "",
-                    "title": "",
-                    "subtitle": "",
-                    "tags": []
+                    "alt": "Tony walking on the beach",
+                    "title": {
+                        "en": "Passionate by those little creatures 2",
+                        "fr": ""
+                    },
+                    "tags": [
+                        "people",
+                        "beach"
+                    ]
                 },
                 {
                     "url": "/salinas grandes/7.JPG",
-                    "alt": "",
-                    "title": "",
+                    "alt": "Gallo pinto meal",
+                    "title": {
+                        "en": "The famous Gallo-Pinto (Find the recipe on the about section)",
+                        "fr": ""
+                    },
                     "subtitle": "",
                     "tags": []
                 }
@@ -94,51 +170,77 @@
         },
         {
             "name": "Managua",
+            "title": {
+                "en": "The capital of Nicaragua is a wonderful and full of energy city.",
+                "fr": ""
+            },
             "lat": 12.136389,
             "lng": -86.251389,
             "zoom": 9,
             "pictures": [
                 {
                     "url": "/managua/1.JPG",
-                    "alt": "",
-                    "title": "",
-                    "subtitle": "",
-                    "tags": []
+                    "alt": "A motorbike on the street",
+                    "title": {
+                        "en": "A motobike"
+                    },
+                    "tags": [
+                        "city",
+                        "moto"
+                    ]
                 },
                 {
                     "url": "/managua/2.JPG",
-                    "alt": "",
-                    "title": "",
-                    "subtitle": "",
-                    "tags": []
+                    "alt": "Victoria Clasica beer ad",
+                    "title": {
+                        "en": "Best beer in the country"
+                    },
+                    "tags": [
+                        "city",
+                        "beer"
+                    ]
                 },
                 {
                     "url": "/managua/3.JPG",
-                    "alt": "",
-                    "title": "",
-                    "subtitle": "",
-                    "tags": []
+                    "alt": "Urban decorations",
+                    "title": {
+                        "en": "Urban decoration 1"
+                    },
+                    "tags": [
+                        "city"
+                    ]
                 },
                 {
                     "url": "/managua/4.JPG",
-                    "alt": "",
-                    "title": "",
-                    "subtitle": "",
-                    "tags": []
+                    "alt": "Urban decorations",
+                    "title": {
+                        "en": "Urban decoration 2"
+                    },
+                    "tags": [
+                        "city"
+                    ]
                 },
                 {
                     "url": "/managua/5.JPG",
-                    "alt": "",
-                    "title": "",
-                    "subtitle": "",
-                    "tags": []
+                    "alt": "A mother and her child on the street",
+                    "title": {
+                        "en": "Preparing the big event"
+                    },
+                    "tags": [
+                        "people",
+                        "city",
+                        "shop"
+                    ]
                 },
                 {
                     "url": "/managua/6.JPG",
-                    "alt": "",
-                    "title": "",
-                    "subtitle": "",
-                    "tags": []
+                    "alt": "Urban decorations",
+                    "title": {
+                        "en": "Urban decorations 3"
+                    },
+                    "tags": [
+                        "city"
+                    ]
                 }
             ]
         },

@@ -1,22 +1,18 @@
 <template>
   <div id="navigation-container">
- <b-navbar fixed="top">
-    <b-navbar-brand tag="h3" class="mb-0">Gallo Pinto</b-navbar-brand>
-
-      <!-- <b-nav-item>
-        <router-link to="/slideshow/leon/leon0.JPG">    
-            Slideshow mode
+  <b-navbar class="navigation-top-navbar" fixed="top" v-bind:class="{ 'navigation-top-navbar-displayed': menuIsBig }">
+    
+            <b-nav-item>
+        <router-link class="navigation-menu-home-btn" to="/">    
+           Gallo Pinto
         </router-link>
-      </b-nav-item> -->
-      
-        <b-nav-item>
-        <router-link class="navigation-about-btn" to="/gallo-pinto">    
+      </b-nav-item>
+              <b-nav-item>
+        <router-link class="navigation-menu-right-btn" to="/gallo-pinto">    
            About Gallo Pinto
         </router-link>
       </b-nav-item>
-
-    <!-- <floating-menu v-if="!displayMenu" v-bind:cities=cities v-bind:currentIndex=currentIndex id="menu"></floating-menu> -->
-  </b-navbar>
+        </b-navbar>
 
     <div id="feed">
       <feed-container v-bind:cities=cities v-model=currentIndex ref="feed-component"></feed-container>
@@ -25,7 +21,27 @@
     <div id="map">
       <map-container v-bind:cities=cities v-bind:currentIndex=currentIndex v-on:cityClicked="handleCityClicked"></map-container>
     </div>
-    
+      <b-navbar class="navigation-bottom-navbar-displayed" fixed="bottom">
+                    <b-nav-item>
+
+    <ul  v-scroll-spy-link >  
+    <li :id="city.name" v-for="(city, index) in cities" v-bind:data="city"
+    v-bind:key="city.name" v-bind:class="{ active: index == currentIndex }">
+    <a class="navigation-city-menu-city"> 
+    <span v-if="index!=0">|</span>
+    <span>{{city.name}}</span>
+    </a>
+    </li>
+   </ul>
+    </b-nav-item>
+    <b-nav-item v-on:click="scrollTo(0)">
+      <a class="navigation-city-menu-city"> 
+      <span>Go to the top</span>
+      <span> ↑</span>
+    </a>
+  </b-nav-item>
+  </b-navbar>
+
   </div>
 </template>
 
@@ -47,26 +63,69 @@ export default {
         value: [],
         type: Array
       },
+      cityMenuVisible: false,
       currentIndex: 0,
-      clickedCity: 0
+      clickedCity: 0,
+      scroll: {
+        isGoingDown: false,
+        minimumOffset: 50,
+        lastCheck: 0,
+        lastScrollYPosition: 0
+      }
     };
   },
   computed: {
     displayMenu: function() {
       return this.currentIndex == 0;
+    },
+    menuIsBig: function() {
+      if (this.lastScrollYPosition < 100) {
+        return true;
+      }
+      return !this.scroll.isGoingDown;
     }
   },
   methods: {
     handleCityClicked: function(index) {
       this.scrollTo(index);
     },
-    scrollTo: Function
+    handleCityMenuTitleClicked: function() {
+      this.cityMenuVisible = !this.cityMenuVisible;
+    },
+    scrollTo: Function,
+    saveScrollPosition: function(position, timeStamp, isGoingDown) {
+      if (
+        Math.abs(this.scroll.lastScrollYPosition - position) <
+        this.scroll.minimumOffset
+      ) {
+        return;
+      }
+      this.scroll.isGoingDown = this.scroll.lastScrollYPosition < position;
+      this.scroll.lastCheck = timeStamp;
+      this.scroll.lastScrollYPosition = position;
+    }
   },
   created: function() {
     this.cities = require("../../static/data.json").cities;
   },
   mounted: function() {
     this.scrollTo = this.$refs["feed-component"].$scrollTo;
+
+    const vm = this;
+    // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+    window.addEventListener(
+      "scroll",
+      function(e) {
+        if (window.scrollY < 100) {
+          return vm.saveScrollPosition(window.scrollY, e.timeStamp);
+        }
+
+        vm.cityMenuVisible = false;
+
+        vm.saveScrollPosition(window.scrollY, e.timeStamp);
+      },
+      false
+    );
   }
 };
 </script>
@@ -88,53 +147,19 @@ body {
   right: 0;
 }
 
-h1 {
-  font-weight: 100;
-  font-size: 70px;
-  margin-bottom: 30px;
-}
-
-ul {
-  list-style: none;
-  font-size: 30px;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-  display: inline;
-}
-
-h3 {
-  padding: 4px;
-  padding-left: 10px;
-  font-size: 14px;
-  color: grey;
+.navigation-city-menu-city {
+  font-size: 10px;
   font-weight: 100;
 }
-
-h3 {
-  font-weight: 100;
-  letter-spacing: 8px;
+.navigation-city-menu-city span {
+  padding-left: 5px;
+  transition: font-size 0.1s;
 }
-
-h2 {
-  font-weight: 100;
-  font-size: 40px;
-  margin-bottom: 30px;
-  letter-spacing: 2px;
-  font-weight: 100;
+.active .navigation-city-menu-city {
+  font-size: 13px;
 }
-
-.navbar {
-  background-color: #fdfafa;
-  padding: 0;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.navigation-about-btn {
-  font-weight: 100;
-  font-size: 12px;
+.navigation-city-menu-city:hover {
+  font-size: 13px;
 }
 
 @media only screen and (max-width: 600px) {

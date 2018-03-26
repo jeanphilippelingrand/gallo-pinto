@@ -14,15 +14,16 @@
   </carousel>
   <button v-if="currentIndex>0" v-on:click="currentIndex--" id="slideshow-left-arrow" class="slideshow-arrow"></button>
   <button  v-if="currentIndex<(images.length-1)" v-on:click="currentIndex++"  id="slideshow-right-arrow" class="slideshow-arrow"></button>
-
   </div>
 </template>
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
+import ImageURLMixin from "../mixins/imagesURL";
 
 export default {
   name: "slideshow",
+  mixins: [ImageURLMixin],
   components: {
     Carousel,
     Slide
@@ -61,10 +62,11 @@ export default {
     this.setupKeyboardListener();
   },
   methods: {
+    getHD: function(image) {
+      window.open(this.getImageURL(image.picture.url, true), "_blank");
+    },
     getImagesMap: function(city, picture) {
-      let src =
-        "http://res.cloudinary.com/dzcoopyjp/image/upload/gallo%20pinto" +
-        picture.url;
+      let src = this.getImageURL(picture.url);
 
       return { city: city, picture: picture, src: src };
     },

@@ -21,7 +21,7 @@
   </div>
 
 </template>
-<style>
+<style scoped>
 #map-container {
   padding-right: 2px;
   padding-left: 2px;

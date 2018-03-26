@@ -87,7 +87,7 @@ h2 {
   color: #dfdfec;
   font-weight: 100;
   font-size: 50px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 5px;
@@ -159,10 +159,10 @@ header {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#80c2f192, #ffffff29, #4d44549e);
+  background: linear-gradient(#054c7de0, #ffffff29, #4d445400);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px), screen and (max-height: 600px) {
   h1 {
     font-size: 30px;
   }
@@ -175,6 +175,9 @@ header {
   p {
     font-weight: 60;
     font-size: 15px;
+  }
+  #conversion-text {
+    width: 100%;
   }
 }
 </style>

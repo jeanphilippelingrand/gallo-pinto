@@ -11,8 +11,11 @@
 </template>
 
 <script>
+import ImageURLMixin from "../mixins/imagesURL";
+
 export default {
   name: "picture-container",
+  mixins: [ImageURLMixin],
   props: {
     pic: {
       type: Object
@@ -28,15 +31,16 @@ export default {
   },
   computed: {
     imgURL: function() {
-      let url = "http://res.cloudinary.com/dzcoopyjp/image/upload";
-      if (this.effect) {
-        url += "/e_tilt_shift:20,q_75";
-      }
-      if (this.minimize) {
-        url += "/c_scale,w_2048";
-      }
-      url += "/gallo%20pinto" + this.pic.url;
-      return url;
+      return this.getImageURL(this.pic.url);
+      // let url = "http://res.cloudinary.com/dzcoopyjp/image/upload";
+      // if (this.effect) {
+      //   url += "/e_tilt_shift:20,q_75";
+      // }
+      // if (this.minimize) {
+      //   url += "/c_scale,w_2048";
+      // }
+      // url += "/gallo%20pinto" + this.pic.url;
+      // return url;
       // return require('../assets/pictures'+this.pic.url);
     }
   },

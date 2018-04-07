@@ -1,6 +1,8 @@
 # nica
 
-> Display travel photos from Nicaragua
+> Display travel photos from Nicaragua. 
+> Main thing is the realtime update of the map when the user scrolls.
+> Also usage of vue-carousel of SSENSE. 
 
 ## Build Setup
 
@@ -17,5 +19,3 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

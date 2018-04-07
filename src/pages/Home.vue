@@ -1,21 +1,23 @@
  <template>
+ 
   <div>
-      <div class="bg" v-bind:class="{ bg: this.state === 0, bg1: this.state === 1,bg2: this.state === 2, bg3: this.state === 3 }">
+      <div class="bg" v-bind:class="{ initStyle: this.state === -1, bg0: this.state === 0, bg1: this.state === 1,bg2: this.state === 2, bg3: this.state === 3 }">
       </div>
 <!-- v-bind:class="{ 'home-fl1': this.state === 0, 'home-fl2': this.state === 1,'home-fl3': this.state === 2, 'home-fl4': this.state === 3 }" -->
 <div class="home-filter-layer" ></div>
   <div id="content">
+    <v-touch @swipe="handleScroll">
     <header>
           <h1>Gallo Pinto</h1>
           <div id="conversion-text">Gallo Pinto is a way to visit the beautiful country of Nicaragua through some travel pictures. Your travel will be starting like mine in Leon, then you will be visiting Managua, Granada and San Juan Del Sur. </div>
     </header>
         
       <div id="cta">
-        <router-link to="/navigation">    
+        <router-link to="/travel">    
           <h2>Start your journey</h2>
         </router-link>
       </div>
-
+    </v-touch>
   </div>
 
   </div>
@@ -26,7 +28,7 @@ export default {
   name: "home",
   data() {
     return {
-      state: 0
+      state: -1
     };
   },
   methods: {
@@ -36,39 +38,29 @@ export default {
       } else {
         this.state++;
       }
+    },
+    handleScroll: function(event) {
+      this.$router.push(`/travel`);
     }
   },
   mounted: function() {
-    this.changeState();
+    let vm = this;
+
+    setTimeout(function() {
+      vm.state = 0;
+    }, 500);
     setInterval(this.changeState, 10000);
+  },
+  created: function() {
+    window.addEventListener("wheel", this.handleScroll);
+  },
+  destroyed: function() {
+    window.removeEventListener("wheel", this.handleScroll);
   }
 };
 </script>
 
 <style scoped>
-.bg {
-  position: fixed;
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  -webkit-transition: background-image 0.4s ease-in-out,
-    transform 10s ease-in-out;
-  transition: background-image 0.4s ease-in-out, transform 10s ease-in-out;
-  transform: scale(1.2);
-  padding: 50px;
-
-  /* The image used */
-  background-image: url("http://res.cloudinary.com/dzcoopyjp/image/upload/c_scale,w_2048/gallo%20pinto/salinas grandes/3.JPG");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #content {
   position: fixed;
   height: 100%;
@@ -141,6 +133,32 @@ header {
   text-decoration: none;
 }
 
+.bg {
+  position: fixed;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: background-image 0.4s ease-in-out,
+    transform 10s ease-in-out;
+  transition: background-image 0.4s ease-in-out, transform 10s ease-in-out;
+  padding: 50px;
+
+  /* The image used */
+  background-image: url("http://res.cloudinary.com/dzcoopyjp/image/upload/c_scale,w_2048/gallo%20pinto/san juan del sur/6.JPG");
+
+  /* Full height */
+  height: 100%;
+  transform: scale(1);
+
+  /* Center and scale the image nicely */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg0 {
+  transform: scale(1.2);
+}
+
 .bg1 {
   transform: scale(1.2);
   background-image: url("http://res.cloudinary.com/dzcoopyjp/image/upload/c_scale,w_2048/gallo%20pinto/granada/6.JPG");
@@ -152,7 +170,7 @@ header {
 }
 .bg3 {
   transform: scale(1.4);
-  background-image: url("http://res.cloudinary.com/dzcoopyjp/image/upload/c_scale,w_2048/gallo%20pinto/san juan del sur/6.JPG");
+  background-image: url("http://res.cloudinary.com/dzcoopyjp/image/upload/c_scale,w_2048/gallo%20pinto/salinas grandes/3.JPG");
 }
 
 .home-filter-layer {

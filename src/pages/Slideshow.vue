@@ -87,20 +87,15 @@ export default {
       this.$router.go(-1);
     }
   },
-  watch: {
-    currentIndex: function(newVal, oldVal) {
-      // console.log(oldVal, newVal);
-    }
-  },
   mounted: function() {
+    const city = this.$route.query.city || "leon";
+    const photoId = this.$route.query.photoId || 0;
+
     let i = 0;
 
     for (let ctIndex = 0; ctIndex < this.cities.length; ctIndex++) {
-      if (
-        this.cities[ctIndex].name.toUpperCase() ===
-        this.$route.params.city.toUpperCase()
-      ) {
-        i += Number(this.$route.params.photoId);
+      if (this.cities[ctIndex].name.toUpperCase() === city.toUpperCase()) {
+        i += Number(photoId);
         this.currentIndex = Number(i);
         return;
       }

@@ -32,32 +32,7 @@ export default {
   computed: {
     imgURL: function() {
       return this.getImageURL(this.pic.url);
-      // let url = "http://res.cloudinary.com/dzcoopyjp/image/upload";
-      // if (this.effect) {
-      //   url += "/e_tilt_shift:20,q_75";
-      // }
-      // if (this.minimize) {
-      //   url += "/c_scale,w_2048";
-      // }
-      // url += "/gallo%20pinto" + this.pic.url;
-      // return url;
-      // return require('../assets/pictures'+this.pic.url);
     }
-  },
-  methods: {
-    handleImageClick: function() {
-      // this.isBig = !this.isBig;
-      $router.push(`slideshow/`);
-    },
-    handleScroll: function(event) {
-      this.isBig = false;
-    }
-  },
-  created: function() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  destroyed: function() {
-    window.removeEventListener("scroll", this.handleScroll);
   }
 };
 </script>

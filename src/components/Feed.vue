@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     handleImageClick(city, indexPic) {
-      this.$router.push(`/slideshow/${city.name}/${indexPic}`);
+      this.$router.push(`/slideshow?city=${city.name}&photoId=${indexPic}`);
     }
   },
   watch: {
@@ -113,3 +113,4 @@ h2 {
   }
 }
 </style>
+

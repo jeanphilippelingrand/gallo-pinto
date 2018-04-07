@@ -12,7 +12,9 @@ import AppView from './App.vue'
 import routes from './routes'
 import VueRouter from 'vue-router'
 import VueCarousel from 'vue-carousel'
+import VueTouch from 'vue-touch'
 
+Vue.use(VueTouch)
 Vue.use(VueCarousel)
 Vue.use(Scrollspy)
 Vue.use(BootstrapVue)

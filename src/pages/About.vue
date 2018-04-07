@@ -3,7 +3,7 @@
     <h1>Gallo Pinto</h1>
     <img id="img" src="http://res.cloudinary.com/dzcoopyjp/image/upload/c_scale,w_2048/gallo%20pinto/salinas grandes/7.JPG">
     <p>The Gallo Pinto is a typical meal from Nicaragua made only from beans and rice. This simple combinaison is a great analogy of the way to enjoy the country. Less you have, less you can loose.</p>
-    <router-link to="/navigation">    <h2>Start your journey</h2>
+    <router-link to="/travel">    <h2>Start your journey</h2>
 </router-link>
 
   </div>

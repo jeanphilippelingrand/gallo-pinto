@@ -9,7 +9,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/navigation',
+    path: '/travel',
     component: Navigation
   },
   {
@@ -18,10 +18,6 @@ const routes = [
   },
   {
     path: '/slideshow',
-    component: Slideshow
-  },
-  {
-    path: '/slideshow/:city/:photoId',
     component: Slideshow
   }
 ]

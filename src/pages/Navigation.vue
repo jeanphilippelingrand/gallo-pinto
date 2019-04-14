@@ -106,7 +106,7 @@ export default {
     }
   },
   created: function () {
-    this.cities = require('../../static/data.json').cities
+    this.cities = require('../../static/navigation/data.json').countries.nicaragua.cities
   },
   mounted: function () {
     this.scrollTo = this.$refs['feed-component'].$scrollTo

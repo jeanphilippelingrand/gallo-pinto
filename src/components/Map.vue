@@ -37,7 +37,10 @@ export default {
       type: Array,
       value: []
     },
-    currentIndex: 0
+    currentIndex: {
+      type: Number,
+      value: 0
+    }
   },
   data () {
     return {
@@ -106,12 +109,12 @@ export default {
 
       animate()
     }
-  },
-  mounted: function () {
-    let vm = this
-    setTimeout(function () {
-      vm.currentIndex = 3
-    }, 500)
   }
+  // mounted: function () {
+  //   let vm = this
+  //   setTimeout(function () {
+  //     vm.currentIndex = 3
+  //   }, 500)
+  // }
 }
 </script>

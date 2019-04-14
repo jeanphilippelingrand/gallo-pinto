@@ -1,5 +1,4 @@
  <template>
-
   <div id="slideshow-container">
     <div id="slideshow-button-bar">
        <transition name="fade" v-bind:key="currentIndex">
@@ -30,7 +29,7 @@ export default {
   },
   data: function () {
     return {
-      cities: require('../../static/data.json').cities,
+      cities: require('../../static/navigation/data.json').countries.nicaragua.cities,
       currentIndex: 0,
       images: {
         value: [],

@@ -1,5 +1,5 @@
  <template>
- 
+
   <div>
       <div class="bg" v-bind:class="{ initStyle: this.state === -1, bg0: this.state === 0, bg1: this.state === 1,bg2: this.state === 2, bg3: this.state === 3 }">
       </div>
@@ -11,9 +11,9 @@
           <h1>Gallo Pinto</h1>
           <div id="conversion-text">Gallo Pinto is a way to visit the beautiful country of Nicaragua through some travel pictures. Your travel will be starting like mine in Leon, then you will be visiting Managua, Granada and San Juan Del Sur. </div>
     </header>
-        
+
       <div id="cta">
-        <router-link to="/travel">    
+        <router-link to="/travel/nicaragua">
           <h2>Start your journey</h2>
         </router-link>
       </div>

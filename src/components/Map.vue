@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: "map-container",
+  name: 'map-container',
   props: {
     cities: {
       type: Array,
@@ -39,80 +39,79 @@ export default {
     },
     currentIndex: 0
   },
-  data() {
+  data () {
     return {
       zoom: this.cities ? this.cities[0].zoom : 7,
       animatedCity: {
         center: {
-          lat: 12.8649313, //this.cities[0].lat,
-          lng: -87.2683805 //this.cities[0].lng
+          lat: 12.8649313,
+          lng: -87.2683805
         }
       }
-    };
+    }
   },
   methods: {
-    handleMarkerClick: function(city, index) {
-      this.$emit("cityClicked", index);
+    handleMarkerClick: function (city, index) {
+      this.$emit('cityClicked', index)
     }
   },
   computed: {
-    currentCity: function() {
-      return this.cities ? this.cities[this.currentIndex] : {};
+    currentCity: function () {
+      return this.cities ? this.cities[this.currentIndex] : {}
     },
-    markers: function() {
+    markers: function () {
       return this.cities
         ? this.cities.map(city => {
-            return {
-              city: city,
-              position: { lat: city.lat, lng: city.lng }
-            };
-          })
-        : [];
+          return {
+            city: city,
+            position: { lat: city.lat, lng: city.lng }
+          }
+        })
+        : []
     }
   },
   watch: {
-    currentCity: function(newCity, oldCity) {
+    currentCity: function (newCity, oldCity) {
       if (!TWEEN) {
         return (this.animatedCity = {
           center: {
             lat: newCity.lat,
             lng: oldCity.lng
           }
-        });
+        })
       }
-      var vm = this;
+      var vm = this
 
-      function animate() {
+      function animate () {
         if (TWEEN.update()) {
-          requestAnimationFrame(animate);
+          requestAnimationFrame(animate)
         }
       }
 
       new TWEEN.Tween({ lat: oldCity.lat, lng: oldCity.lng })
         .easing(TWEEN.Easing.Quadratic.Out)
         .to({ lat: newCity.lat, lng: newCity.lng }, 2000)
-        .onUpdate(function() {
+        .onUpdate(function () {
           vm.animatedCity = {
             center: {
               lat: this.lat,
               lng: this.lng
             }
-          };
+          }
         })
         .start()
-        .onComplete(function() {
-          vm.zoom = newCity.zoom;
-        });
+        .onComplete(function () {
+          vm.zoom = newCity.zoom
+        })
 
-      animate();
+      animate()
     }
   },
-  mounted: function() {
-    let vm = this;
-    setTimeout(function() {
-      vm.currentIndex = 3;
-    }, 500);
+  mounted: function () {
+    let vm = this
+    setTimeout(function () {
+      vm.currentIndex = 3
+    }, 500)
   }
-};
+}
 </script>
-

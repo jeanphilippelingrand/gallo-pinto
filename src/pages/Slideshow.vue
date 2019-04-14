@@ -18,33 +18,33 @@
 </template>
 
 <script>
-import { Carousel, Slide } from "vue-carousel";
-import ImageURLMixin from "../mixins/imagesURL";
+import {Carousel, Slide} from 'vue-carousel'
+import ImageURLMixin from '../mixins/imagesURL'
 
 export default {
-  name: "slideshow",
+  name: 'slideshow',
   mixins: [ImageURLMixin],
   components: {
     Carousel,
     Slide
   },
-  data: function() {
+  data: function () {
     return {
-      cities: require("../../static/data.json").cities,
+      cities: require('../../static/data.json').cities,
       currentIndex: 0,
       images: {
         value: [],
         type: Array
       }
-    };
-  },
-  computed: {
-    currentCityName: function() {
-      return this.images[this.currentIndex].city.name;
     }
   },
-  created: function() {
-    this.images = [];
+  computed: {
+    currentCityName: function () {
+      return this.images[this.currentIndex].city.name
+    }
+  },
+  created: function () {
+    this.images = []
     for (let ctIndex = 0; ctIndex < this.cities.length; ctIndex++) {
       for (
         let picIndex = 0;
@@ -56,53 +56,53 @@ export default {
             this.cities[ctIndex],
             this.cities[ctIndex].pictures[picIndex]
           )
-        );
+        )
       }
     }
-    this.setupKeyboardListener();
+    this.setupKeyboardListener()
   },
   methods: {
-    getHD: function(image) {
-      window.open(this.getImageURL(image.picture.url, true), "_blank");
+    getHD: function (image) {
+      window.open(this.getImageURL(image.picture.url, true), '_blank')
     },
-    getImagesMap: function(city, picture) {
-      let src = this.getImageURL(picture.url);
+    getImagesMap: function (city, picture) {
+      let src = this.getImageURL(picture.url)
 
-      return { city: city, picture: picture, src: src };
+      return {city: city, picture: picture, src: src}
     },
-    setupKeyboardListener: function() {
-      let vm = this;
-      window.addEventListener("keydown", function(e) {
+    setupKeyboardListener: function () {
+      let vm = this
+      window.addEventListener('keydown', function (e) {
         switch (e.keyCode) {
           case 37:
-            vm.currentIndex && vm.currentIndex--;
-            break;
+            vm.currentIndex && vm.currentIndex--
+            break
           case 39:
-            vm.currentIndex < vm.images.length && vm.currentIndex++;
-            break;
+            vm.currentIndex < vm.images.length && vm.currentIndex++
+            break
         }
-      });
+      })
     },
-    handleCloseBtnClicked: function() {
-      this.$router.go(-1);
+    handleCloseBtnClicked: function () {
+      this.$router.go(-1)
     }
   },
-  mounted: function() {
-    const city = this.$route.query.city || "leon";
-    const photoId = this.$route.query.photoId || 0;
+  mounted: function () {
+    const city = this.$route.query.city || 'leon'
+    const photoId = this.$route.query.photoId || 0
 
-    let i = 0;
+    let i = 0
 
     for (let ctIndex = 0; ctIndex < this.cities.length; ctIndex++) {
       if (this.cities[ctIndex].name.toUpperCase() === city.toUpperCase()) {
-        i += Number(photoId);
-        this.currentIndex = Number(i);
-        return;
+        i += Number(photoId)
+        this.currentIndex = Number(i)
+        return
       }
-      i += this.cities[ctIndex].pictures.length;
+      i += this.cities[ctIndex].pictures.length
     }
   }
-};
+}
 </script>
 
 <style>

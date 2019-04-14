@@ -1,7 +1,7 @@
 <template >
 <div  id="container" v-on:mouseleave="mouseLeave" v-on:mouseover="mouseOver">
   <h3 v-if="!active">Menu</h3>
-  <ul v-if="active" v-scroll-spy-link>  
+  <ul v-if="active" v-scroll-spy-link>
     <li :id="city.name" class="title" v-for="(city, index) in cities" v-bind:data="city"
     v-bind:key="city.name" v-bind:class="{ active: index == currentIndex }">
     <a :href="`#${city.name}`">
@@ -13,10 +13,9 @@
 </template>
 
 <script>
-import Picture from "./Picture";
 
 export default {
-  name: "floatingMenu",
+  name: 'floatingMenu',
 
   props: {
     currentIndex: {
@@ -26,20 +25,20 @@ export default {
       type: Array
     }
   },
-  data: function() {
+  data: function () {
     return {
       active: false
-    };
+    }
   },
   methods: {
-    mouseOver: function() {
-      this.active = true;
+    mouseOver: function () {
+      this.active = true
     },
-    mouseLeave: function() {
-      this.active = false;
+    mouseLeave: function () {
+      this.active = false
     }
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

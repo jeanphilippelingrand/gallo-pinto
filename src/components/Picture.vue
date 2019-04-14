@@ -4,37 +4,37 @@
       <button  v-on:click="handleCloseBtnClicked()" class="picture-fullscreen-btn"/>
     </div>
 <img v-lazy="imgURL" v-on:mouseover="mouseOver=true" v-on:mouseleave="mouseOver=false">
- 
+
   <p class="photo-title">{{pic.title && (pic.title.en || pic.title.fr)}}</p>
 
   </div>
 </template>
 
 <script>
-import ImageURLMixin from "../mixins/imagesURL";
+import ImageURLMixin from '../mixins/imagesURL'
 
 export default {
-  name: "picture-container",
+  name: 'picture-container',
   mixins: [ImageURLMixin],
   props: {
     pic: {
       type: Object
     }
   },
-  data() {
+  data () {
     return {
       isBig: false,
       effect: false,
       minimize: true,
       mouseOver: false
-    };
+    }
   },
   computed: {
-    imgURL: function() {
-      return this.getImageURL(this.pic.url);
+    imgURL: function () {
+      return this.getImageURL(this.pic.url)
     }
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

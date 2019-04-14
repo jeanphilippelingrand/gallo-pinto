@@ -21,17 +21,15 @@
          </div>
       </li>
     </ul>
-
 </div>
-
 
 </template>
 
 <script>
-import Picture from "./Picture";
+import Picture from './Picture'
 
 export default {
-  name: "feed",
+  name: 'feed',
   components: {
     pic: Picture
   },
@@ -40,24 +38,24 @@ export default {
       type: Array
     }
   },
-  data: function() {
+  data: function () {
     return {
       currentIndex: {
         type: Number
       }
-    };
+    }
   },
   methods: {
-    handleImageClick(city, indexPic) {
-      this.$router.push(`/slideshow?city=${city.name}&photoId=${indexPic}`);
+    handleImageClick (city, indexPic) {
+      this.$router.push(`/slideshow?city=${city.name}&photoId=${indexPic}`)
     }
   },
   watch: {
-    currentIndex: function(newVal, oldVal) {
-      this.$emit("input", newVal);
+    currentIndex: function (newVal, oldVal) {
+      this.$emit('input', newVal)
     }
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -113,4 +111,3 @@ h2 {
   }
 }
 </style>
-

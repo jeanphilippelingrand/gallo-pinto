@@ -284,9 +284,9 @@
       "zoom": 7.5,
       "cities": [
         {
-          "name": "Tenorio",
+          "name": "La Fortuna",
           "title": {
-            "en": ""
+            "en": "Tenorio and the Rio Celeste"
           },
           "lat": 10.6714,
           "lng": -84.971352,
@@ -295,13 +295,21 @@
             "url": "/costa rica/tenorio/1.JPG",
             "alt": "Gallo pinto from costa rica",
             "title": {
-              "en": "Another Gallo Pinto"
+              "en": "Another Gallo Pinto - always perfect"
             },
             "tags": ["gallo pinto", "food"]
           },
             {
-              "url": "/costa rica/tenorio/2.JPG",
+              "url": "/costa rica/Puntarenas/4.JPG",
               "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            },
+            {
+              "url": "/costa rica/tenorio/2.JPG",
+              "alt": "Vegetation on trees",
               "title": {
                 "en": "Canopy"
               },
@@ -309,52 +317,52 @@
             },
             {
               "url": "/costa rica/tenorio/3.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Palm trees shades on the ground",
               "title": {
-                "en": "Another Gallo Pinto"
+                "en": "Shades"
               },
-              "tags": ["gallo pinto", "food"]
+              "tags": ["nature", "palm trees"]
             },
             {
               "url": "/costa rica/tenorio/4.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Rio celeste",
               "title": {
-                "en": "Canopy"
+                "en": "Rio celeste"
               },
-              "tags": ["nature", "canopy"]
+              "tags": ["nature"]
             },
             {
               "url": "/costa rica/tenorio/5.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Blue flower",
               "title": {
-                "en": "Another Gallo Pinto"
+                "en": "Mother earth"
               },
-              "tags": ["gallo pinto", "food"]
+              "tags": ["nature", "flower"]
             },
             {
               "url": "/costa rica/tenorio/6.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Rio celeste",
               "title": {
-                "en": "Canopy"
+                "en": "Rio Celeste"
               },
-              "tags": ["nature", "canopy"]
+              "tags": ["nature"]
             },
             {
               "url": "/costa rica/tenorio/7.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Small pedestrian bridge",
               "title": {
-                "en": "Another Gallo Pinto"
+                "en": "The heaven's door"
               },
-              "tags": ["gallo pinto", "food"]
+              "tags": ["nature", "bridge"]
             }]
         },
         {
           "name": "Playa Hermosa",
           "title": {
-            "en": ""
+            "en": "Closest beach from Liberia. "
           },
-          "lat": 10.2993,
-          "lng": -85.8371,
+          "lat": 10.57245,
+          "lng": -85.676053,
           "zoom": 9,
           "pictures": [{
             "url": "/costa rica/playa hermosa/1.JPG",
@@ -426,8 +434,8 @@
           "title": {
             "en": ""
           },
-          "lat": 10.5705096,
-          "lng": -85.6768799,
+          "lat": 10.2995374,
+          "lng": -85.8437347,
           "zoom": 9,
           "pictures": [{
             "url": "/costa rica/tamarindo/1.JPG",
@@ -487,29 +495,14 @@
             }]
         },
         {
-          "name": "Puntarenas",
+          "name": "Manuel Antonio",
           "title": {
             "en": ""
           },
-          "lat": 10.5705096,
-          "lng": -85.6768799,
+          "lat": 9.4068743,
+          "lng": -84.1549731,
           "zoom": 9,
-          "pictures": [{
-            "url": "/costa rica/Puntarenas/1.JPG",
-            "alt": "Gallo pinto from costa rica",
-            "title": {
-              "en": "Another Gallo Pinto"
-            },
-            "tags": ["gallo pinto", "food"]
-          },
-            {
-              "url": "/costa rica/Puntarenas/2.JPG",
-              "alt": "Gallo pinto from costa rica",
-              "title": {
-                "en": "Canopy"
-              },
-              "tags": ["nature", "canopy"]
-            },
+          "pictures": [
             {
               "url": "/costa rica/Puntarenas/3.JPG",
               "alt": "Gallo pinto from costa rica",
@@ -519,28 +512,12 @@
               "tags": ["gallo pinto", "food"]
             },
             {
-              "url": "/costa rica/Puntarenas/4.JPG",
-              "alt": "Gallo pinto from costa rica",
-              "title": {
-                "en": "Canopy"
-              },
-              "tags": ["nature", "canopy"]
-            },
-            {
               "url": "/costa rica/Puntarenas/5.JPG",
               "alt": "Gallo pinto from costa rica",
               "title": {
                 "en": "Another Gallo Pinto"
               },
               "tags": ["gallo pinto", "food"]
-            },
-            {
-              "url": "/costa rica/Puntarenas/6.JPG",
-              "alt": "Gallo pinto from costa rica",
-              "title": {
-                "en": "Canopy"
-              },
-              "tags": ["nature", "canopy"]
             },
             {
               "url": "/costa rica/Puntarenas/7.JPG",
@@ -560,6 +537,39 @@
             },
             {
               "url": "/costa rica/Puntarenas/9.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            }]
+        },
+        {
+          "name": "Uvita",
+          "title": {
+            "en": ""
+          },
+          "lat": 9.1633231,
+          "lng": -83.7380504,
+          "zoom": 9,
+          "pictures": [
+            {
+              "url": "/costa rica/Puntarenas/6.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            },{
+            "url": "/costa rica/Puntarenas/1.JPG",
+            "alt": "Gallo pinto from costa rica",
+            "title": {
+              "en": "Another Gallo Pinto"
+            },
+            "tags": ["gallo pinto", "food"]
+          },
+            {
+              "url": "/costa rica/Puntarenas/2.JPG",
               "alt": "Gallo pinto from costa rica",
               "title": {
                 "en": "Canopy"

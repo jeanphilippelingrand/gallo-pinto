@@ -114,7 +114,7 @@ export default {
   .map {
     position: relative;
     max-width: 800px;
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
   }

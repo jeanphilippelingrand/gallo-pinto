@@ -22,7 +22,7 @@ export default Vue.mixin({
         return 'http://res.cloudinary.com/dzcoopyjp/image/upload/c_scale,q_100,w_4032/v1520700460/gallo%20pinto' + url
       }
 
-      return 'http://res.cloudinary.com/dzcoopyjp/image/upload/c_scale,w_1494/v1520700460/gallo%20pinto' + url
+      return 'http://res.cloudinary.com/dzcoopyjp/image/upload/c_scale,w_1000/v1520700460/gallo%20pinto' + url
     }
   }
 })

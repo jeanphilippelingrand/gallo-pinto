@@ -2,7 +2,7 @@
   <div id="slideshow-container">
     <div id="slideshow-button-bar">
        <transition name="fade" v-bind:key="currentIndex">
-          <h1 id="slideshow-city-title">{{currentCityName}}</h1>
+         <span id="slideshow-city-title">{{currentImage.city}}, {{currentImage.country}}</span>
       </transition>
       <button  v-on:click="handleCloseBtnClicked()" id="close_btn"/>
     </div>
@@ -29,7 +29,7 @@ export default {
   },
   data: function () {
     return {
-      cities: require('../../static/navigation/data.json').countries.nicaragua.cities,
+      countries: require('../../static/navigation/data.json').countries,
       currentIndex: 0,
       images: {
         value: [],
@@ -38,24 +38,31 @@ export default {
     }
   },
   computed: {
-    currentCityName: function () {
-      return this.images[this.currentIndex].city.name
+    currentImage: function () {
+      return this.images[this.currentIndex]
     }
   },
   created: function () {
     this.images = []
-    for (let ctIndex = 0; ctIndex < this.cities.length; ctIndex++) {
-      for (
-        let picIndex = 0;
-        picIndex < this.cities[ctIndex].pictures.length;
-        picIndex++
-      ) {
-        this.images.push(
-          this.getImagesMap(
-            this.cities[ctIndex],
-            this.cities[ctIndex].pictures[picIndex]
+    for (let countryName in this.countries) {
+      let country = this.countries[countryName]
+      country.name = countryName
+      for (let iCity = 0; iCity < country.cities.length; iCity++) {
+        let city = country.cities[iCity]
+        for (
+          let iPicture = 0;
+          iPicture < city.pictures.length;
+          iPicture++
+        ) {
+          this.images.push(
+            this.getImagesMap(
+              country,
+              city,
+              city.pictures[iPicture],
+              iPicture
+            )
           )
-        )
+        }
       }
     }
     this.setupKeyboardListener()
@@ -64,10 +71,10 @@ export default {
     getHD: function (image) {
       window.open(this.getImageURL(image.picture.url, true), '_blank')
     },
-    getImagesMap: function (city, picture) {
+    getImagesMap: function (country, city, picture, index) {
       let src = this.getImageURL(picture.url)
 
-      return {city: city, picture: picture, src: src}
+      return {country: country.name, city: city.name, picture, src, id: index}
     },
     setupKeyboardListener: function () {
       let vm = this
@@ -87,19 +94,12 @@ export default {
     }
   },
   mounted: function () {
-    const city = this.$route.query.city || 'leon'
-    const photoId = this.$route.query.photoId || 0
+    const {city, country, id} = this.$route.params
+    console.log(this.$route.params);
+    this.currentIndex = this.images.findIndex(image => {
+      return image.city === city && image.country === country && image.id === Number(id)
+    })
 
-    let i = 0
-
-    for (let ctIndex = 0; ctIndex < this.cities.length; ctIndex++) {
-      if (this.cities[ctIndex].name.toUpperCase() === city.toUpperCase()) {
-        i += Number(photoId)
-        this.currentIndex = Number(i)
-        return
-      }
-      i += this.cities[ctIndex].pictures.length
-    }
   }
 }
 </script>

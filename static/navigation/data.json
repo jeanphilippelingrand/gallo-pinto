@@ -1,6 +1,775 @@
 {
   "countries": {
+    "california": {
+      "lat": 32.8248175,
+      "lng": -117.3891663,
+      "zoom": 8,
+      "cities": [
+        {
+          "name": "Ocean Beach",
+          "title": {
+            "en": "Welcome in San Diego! Here you can have tricky surf and drugs at the same time."
+          },
+          "lat": 32.7462132,
+          "lng": -117.2532952,
+          "zoom": 11.5,
+          "pictures": [
+            {
+            "url": "/california/ocean beach/1.JPG",
+            "alt": "Beach from the peer",
+            "title": {
+              "en": "From the ocean"
+            },
+            "tags": ["beach", "palm trees", "waves"]
+          },
+            {
+              "url": "/california/ocean beach/2.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Thoughtful bird"
+              },
+              "tags": ["nature", "bird", "ocean"]
+            },
+            {
+              "url": "/california/ocean beach/3.JPG",
+              "alt": "Street with palm trees",
+              "title": {
+                "en": "Typical cali street"
+              },
+              "tags": ["city","street", "palm trees"]
+            },
+            {
+              "url": "/california/ocean beach/4.JPG",
+              "alt": "A crooked christmas tree ",
+              "title": {
+                "en": "Crooked"
+              },
+              "tags": ["tree", "peer"]
+            },
+            {
+              "url": "/california/ocean beach/5.JPG",
+              "alt": "Front garage painted wall",
+              "title": {
+                "en": "Sunset Garage"
+              },
+              "tags": ["paint", "city"]
+            },
+            {
+              "url": "/california/ocean beach/6.JPG",
+              "alt": "A skater boy with his ukulele",
+              "title": {
+                "en": "Cali style"
+              },
+              "tags": ["skate", "city"]
+            }]
+        },
+        {
+          "name": "Downtown",
+          "title": {
+            "en": "Super cute downtown area of San Diego."
+          },
+          "lat": 32.7593029,
+          "lng": -117.1909959,
+          "zoom": 11.5,
+          "pictures": [
+            {
+              "url": "/california/downtown/1.JPG",
+              "alt": "Penn Hotel basement",
+              "title": {
+                "en": "Penn Hotel"
+              },
+              "tags": [
+                "city",
+                "basement"
+              ]
+            },
+            {
+              "url": "/california/downtown/2.JPG",
+              "alt": "City scene with a rasta dog",
+              "title": {
+                "en": "Rastafarai"
+              },
+              "tags": [
+                "city",
+                "dog",
+                "people"
+              ]
+            },
+            {
+              "url": "/california/downtown/3.JPG",
+              "alt": "Green light on a street",
+              "title": {
+                "en": "Going to work"
+              },
+              "tags": [
+                "city",
+                "people"
+              ]
+            },
+            {
+              "url": "/california/downtown/4.JPG",
+              "alt": "View from a high located park",
+              "title": {
+                "en": "Dogs field"
+              },
+              "tags": [
+                "city",
+                "view"
+              ]
+            },
+            {
+              "url": "/california/downtown/5.JPG",
+              "alt": "Empty street with a theatre front",
+              "title": {
+                "en": "Empty streets"
+              },
+              "tags": [
+                "city"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pacific Beach",
+          "title": {
+            "en": "PB for happy hours and long board sessions"
+          },
+          "lat": 32.8024622,
+          "lng": -117.2355795,
+          "zoom": 11.5,
+          "pictures": [
+            {
+              "url": "/california/pacific beach/1.JPG",
+              "alt": "Big soap bubble in front of a sunset",
+              "title": {
+                "en": "Sunset"
+              },
+              "tags": [
+                "sunset"
+              ]
+            },
+            {
+              "url": "/california/pacific beach/2.JPG",
+              "alt": "Living room of an hostel on a rainy day",
+              "title": {
+                "en": "When its raining"
+              },
+              "tags": [
+                "christmas tree",
+                "bear"
+              ]
+            },
+            {
+              "url": "/california/pacific beach/3.JPG",
+              "alt": "Lifeguard spot of pacific beach",
+              "title": {
+                "en": "Palm tree is watching you"
+              },
+              "tags": [
+                "blue",
+                "palm trees"
+              ]
+            },
+            {
+              "url": "/california/pacific beach/4.JPG",
+              "alt": "Pacific beach peer",
+              "title": {
+                "en": "Private houses"
+              },
+              "tags": [
+                "beach",
+                "sunset",
+                "peer"
+              ]
+            },
+            {
+              "url": "/california/pacific beach/5.JPG",
+              "alt": "Pacific beach peer",
+              "title": {
+                "en": "When the sun left"
+              },
+              "tags": [
+                "peer",
+                "beach"
+              ]
+            },
+            {
+              "url": "/california/pacific beach/6.JPG",
+              "alt": "Pacific Beach",
+              "title": {
+                "en": "Pacific beach"
+              },
+              "tags": [
+                "beach",
+                "ocean"
+              ]
+            },
+            {
+              "url": "/california/pacific beach/7.JPG",
+              "alt": "From under the peer",
+              "title": {
+                "en": "Closer to the peer"
+              },
+              "tags": [
+                "peer",
+                "ocean"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "LA",
+          "title": {
+            "en": "Next pictures are from beaches and cities more closer to LA. Not sure exactly where, but does it matter?"
+          },
+          "lat": 33.5473591,
+          "lng": -117.845729,
+          "zoom": 9,
+          "pictures": [
+            {
+              "url": "/california/la/1.JPG",
+              "alt": "Girl with pink hat fishing",
+              "title": {
+                "en": "Fishing"
+              },
+              "tags": ["people", "fishing", "ocean"]
+            },
+            {
+              "url": "/california/la/2.JPG",
+              "alt": "Homeless guy napping with palm trees",
+              "title": {
+                "en": "Dreaming"
+              },
+              "tags": ["city", "palm trees", "people"]
+            },
+            {
+              "url": "/california/la/3.JPG",
+              "alt": "Rear of an expensive car",
+              "title": {
+                "en": "Living the dream"
+              },
+              "tags": ["city", "car"]
+            },
+            {
+              "url": "/california/la/4.JPG",
+              "alt": "Girl with pink hat fishing",
+              "title": {
+                "en": "Fishing 2"
+              },
+              "tags": ["ocean", "fishing", "people"]
+            },
+            {
+              "url": "/california/la/5.JPG",
+              "alt": "Guy skating in the streets",
+              "title": {
+                "en": "Cali style 2"
+              },
+              "tags": ["skate", "people", "city"]
+            },
+            {
+              "url": "/california/la/6.JPG",
+              "alt": "Laguna beach lifeguard spot",
+              "title": {
+                "en": "Shades of blue"
+              },
+              "tags": ["beach"]
+            }
+          ]
+        }
+      ]
+    },
+    "costa-rica": {
+      "lat": 10.6714,
+      "lng": -85.0125,
+      "zoom": 7.5,
+      "cities": [
+        {
+          "name": "Tenorio",
+          "title": {
+            "en": ""
+          },
+          "lat": 10.6714,
+          "lng": -84.971352,
+          "zoom": 9,
+          "pictures": [{
+            "url": "/costa rica/tenorio/1.JPG",
+            "alt": "Gallo pinto from costa rica",
+            "title": {
+              "en": "Another Gallo Pinto"
+            },
+            "tags": ["gallo pinto", "food"]
+          },
+            {
+              "url": "/costa rica/tenorio/2.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            },
+            {
+              "url": "/costa rica/tenorio/3.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Another Gallo Pinto"
+              },
+              "tags": ["gallo pinto", "food"]
+            },
+            {
+              "url": "/costa rica/tenorio/4.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            },
+            {
+              "url": "/costa rica/tenorio/5.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Another Gallo Pinto"
+              },
+              "tags": ["gallo pinto", "food"]
+            },
+            {
+              "url": "/costa rica/tenorio/6.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            },
+            {
+              "url": "/costa rica/tenorio/7.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Another Gallo Pinto"
+              },
+              "tags": ["gallo pinto", "food"]
+            }]
+        },
+        {
+          "name": "Playa Hermosa",
+          "title": {
+            "en": ""
+          },
+          "lat": 10.2993,
+          "lng": -85.8371,
+          "zoom": 9,
+          "pictures": [{
+            "url": "/costa rica/playa hermosa/1.JPG",
+            "alt": "Gallo pinto from costa rica",
+            "title": {
+              "en": "Another Gallo Pinto"
+            },
+            "tags": ["gallo pinto", "food"]
+          },
+          {
+            "url": "/costa rica/playa hermosa/2.JPG",
+            "alt": "Gallo pinto from costa rica",
+            "title": {
+              "en": "Canopy"
+            },
+            "tags": ["nature", "canopy"]
+          },
+          {
+            "url": "/costa rica/playa hermosa/3.JPG",
+            "alt": "Gallo pinto from costa rica",
+            "title": {
+              "en": "Another Gallo Pinto"
+            },
+            "tags": ["gallo pinto", "food"]
+          },
+          {
+            "url": "/costa rica/playa hermosa/4.JPG",
+            "alt": "Gallo pinto from costa rica",
+            "title": {
+              "en": "Canopy"
+            },
+            "tags": ["nature", "canopy"]
+          },
+          {
+            "url": "/costa rica/playa hermosa/5.JPG",
+            "alt": "Gallo pinto from costa rica",
+            "title": {
+              "en": "Another Gallo Pinto"
+            },
+            "tags": ["gallo pinto", "food"]
+          },
+          {
+            "url": "/costa rica/playa hermosa/6.JPG",
+            "alt": "Gallo pinto from costa rica",
+            "title": {
+              "en": "Canopy"
+            },
+            "tags": ["nature", "canopy"]
+          },
+          {
+            "url": "/costa rica/playa hermosa/7.JPG",
+            "alt": "Gallo pinto from costa rica",
+            "title": {
+              "en": "Another Gallo Pinto"
+            },
+            "tags": ["gallo pinto", "food"]
+          },
+          {
+            "url": "/costa rica/playa hermosa/8.JPG",
+            "alt": "Gallo pinto from costa rica",
+            "title": {
+              "en": "Canopy"
+            },
+            "tags": ["nature", "canopy"]
+          }]
+      },
+        {
+          "name": "Tamarindo",
+          "title": {
+            "en": ""
+          },
+          "lat": 10.5705096,
+          "lng": -85.6768799,
+          "zoom": 9,
+          "pictures": [{
+            "url": "/costa rica/tamarindo/1.JPG",
+            "alt": "Gallo pinto from costa rica",
+            "title": {
+              "en": "Another Gallo Pinto"
+            },
+            "tags": ["gallo pinto", "food"]
+          },
+            {
+              "url": "/costa rica/tamarindo/2.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            },
+            {
+              "url": "/costa rica/tamarindo/3.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Another Gallo Pinto"
+              },
+              "tags": ["gallo pinto", "food"]
+            },
+            {
+              "url": "/costa rica/tamarindo/4.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            },
+            {
+              "url": "/costa rica/tamarindo/5.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Another Gallo Pinto"
+              },
+              "tags": ["gallo pinto", "food"]
+            },
+            {
+              "url": "/costa rica/tamarindo/6.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            },
+            {
+              "url": "/costa rica/tamarindo/7.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Another Gallo Pinto"
+              },
+              "tags": ["gallo pinto", "food"]
+            }]
+        },
+        {
+          "name": "Puntarenas",
+          "title": {
+            "en": ""
+          },
+          "lat": 10.5705096,
+          "lng": -85.6768799,
+          "zoom": 9,
+          "pictures": [{
+            "url": "/costa rica/Puntarenas/1.JPG",
+            "alt": "Gallo pinto from costa rica",
+            "title": {
+              "en": "Another Gallo Pinto"
+            },
+            "tags": ["gallo pinto", "food"]
+          },
+            {
+              "url": "/costa rica/Puntarenas/2.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            },
+            {
+              "url": "/costa rica/Puntarenas/3.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Another Gallo Pinto"
+              },
+              "tags": ["gallo pinto", "food"]
+            },
+            {
+              "url": "/costa rica/Puntarenas/4.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            },
+            {
+              "url": "/costa rica/Puntarenas/5.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Another Gallo Pinto"
+              },
+              "tags": ["gallo pinto", "food"]
+            },
+            {
+              "url": "/costa rica/Puntarenas/6.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            },
+            {
+              "url": "/costa rica/Puntarenas/7.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Another Gallo Pinto"
+              },
+              "tags": ["gallo pinto", "food"]
+            },
+            {
+              "url": "/costa rica/Puntarenas/8.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            },
+            {
+              "url": "/costa rica/Puntarenas/9.JPG",
+              "alt": "Gallo pinto from costa rica",
+              "title": {
+                "en": "Canopy"
+              },
+              "tags": ["nature", "canopy"]
+            }]
+        }
+      ]
+    },
+    "las-vegas": {
+      "lat": 36.1272897,
+      "lng": -115.2847744,
+      "zoom": 9,
+      "cities": [
+        {
+          "name": "Las Vegas Strip",
+          "title": {
+            "en": "City of all the vices. Sex & Money are the bests."
+          },
+          "lat": 36.1272897,
+          "lng": -115.2847744,
+          "zoom": 9,
+          "pictures": [{
+            "url": "/vegas/1.JPG",
+            "alt": "The Eiffel Tower from Vegas",
+            "title": {
+              "en": "From Paris to Vegas"
+            },
+            "tags": ["sky", "city"]
+          },
+          {
+            "url": "/vegas/2.JPG",
+            "alt": "Bally's and Venitian",
+            "title": {
+              "en": "From Vegas to Venise"
+            },
+            "tags": ["road", "casino"]
+          },{
+            "url": "/vegas/3.JPG",
+            "alt": "A big wheel",
+            "title": {
+              "en": "The big wheel"
+            },
+            "tags": ["city", "palm trees"]
+          },
+          {
+            "url": "/vegas/4.JPG",
+            "alt": "Quality you can taste - on the wall",
+            "title": {
+              "en": "Big burgers"
+            },
+            "tags": ["ad", "restaurant"]
+          },
+          {
+            "url": "/vegas/5.JPG",
+            "alt": "Mac Donald's",
+            "title": {
+              "en": "McDo"
+            },
+            "tags": ["food", "restaurant"]
+          },
+          {
+            "url": "/vegas/6.JPG",
+            "alt": "Flamingo front",
+            "title": {
+              "en": "Flamingo 1"
+            },
+            "tags": ["casino", "palm trees"]
+          },{
+            "url": "/vegas/7.JPG",
+            "alt": "The big wheel by night",
+            "title": {
+              "en": "The big wheel by night"
+            },
+            "tags": ["sunset", "city"]
+          },
+          {
+            "url": "/vegas/8.JPG",
+            "alt": "Mirage casino front",
+            "title": {
+              "en": "Mirage by day"
+            },
+            "tags": ["casino", "city"]
+          },
+          {
+            "url": "/vegas/9.JPG",
+            "alt": "Mirage casino by night",
+            "title": {
+              "en": "Mirage by night"
+            },
+            "tags": ["casino", "city", "night"]
+          },{
+            "url": "/vegas/10.JPG",
+            "alt": "Big electronic ad",
+            "title": {
+              "en": "Big girl!"
+            },
+            "tags": ["sky", "ad"]
+          },
+          {
+            "url": "/vegas/11.JPG",
+            "alt": "Traffic and sunset",
+            "title": {
+              "en": "Traffic and sunset"
+            },
+            "tags": ["city", "sunset"]
+          },
+          {
+            "url": "/vegas/12.JPG",
+            "alt": "People at a bar",
+            "title": {
+              "en": "Bling bling"
+            },
+            "tags": ["casino", "bar"]
+          },
+          {
+            "url": "/vegas/13.JPG",
+            "alt": "Flamingo front by night",
+            "title": {
+              "en": "Flamingo 2"
+            },
+            "tags": ["casino", "night"]
+          },{
+            "url": "/vegas/14.JPG",
+            "alt": "Flamingo basement and blue sky",
+            "title": {
+              "en": "Flamingo 3"
+            },
+            "tags": ["casino", "sky"]
+          },
+          {
+            "url": "/vegas/15.JPG",
+            "alt": "Horse with a fish tail",
+            "title": {
+              "en": "Horsfish in Hawai"
+            },
+            "tags": ["sky", "city"]
+          },
+          {
+            "url": "/vegas/16.JPG",
+            "alt": "Traffic in Vegas",
+            "title": {
+              "en": "Las Vegas"
+            },
+            "tags": ["city", "traffic"]
+          },
+          {
+            "url": "/vegas/17.JPG",
+            "alt": "American flag",
+            "title": {
+              "en": "Huge America"
+            },
+            "tags": ["sky", "usa"]
+          }]
+        },
+        {
+          "name": "Red rock canyon",
+          "title": {
+            "en": ""
+          },
+          "lat": 36.0923416,
+          "lng": -115.5903313,
+          "zoom": 9,
+          "pictures": [{
+            "url": "/vegas/21.JPG",
+            "alt": "Mountains",
+            "title": {
+              "en": "Little Canyon"
+            },
+            "tags": ["nature", "mountains"]
+          },
+          {
+            "url": "/vegas/22.JPG",
+            "alt": "Red rock and blue sky",
+            "title": {
+              "en": "Red rock and blue sky"
+            },
+            "tags": ["nature", "mountain", "sky"]
+          },
+          {
+            "url": "/vegas/23.JPG",
+            "alt": "Red rock and blue sky",
+            "title": {
+              "en": "Dry"
+            },
+            "tags": ["nature", "mountain"]
+          },
+          {
+            "url": "/vegas/24.JPG",
+            "alt": "Rocks and road",
+            "title": {
+              "en": "On the road again"
+            },
+            "tags": ["road", "mountain", "sky"]
+          },
+          {
+            "url": "/vegas/25.JPG",
+            "alt": "Big mountain",
+            "title": {
+              "en": "Yellow mountain"
+            },
+            "tags": ["nature", "mountain"]
+          }]
+        }
+      ]
+    },
     "nicaragua": {
+      "lat": 12.2678382,
+      "lng": -86.233407,
+      "zoom": 7,
       "cities": [
         {
           "name": "Leon",

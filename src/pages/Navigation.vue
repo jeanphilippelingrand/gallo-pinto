@@ -8,39 +8,45 @@
         </router-link>
       </b-nav-item>
               <b-nav-item>
-        <router-link class="navigation-menu-right-btn" to="/gallo-pinto">
+        <router-link class="navigation-menu-right-btn" to="/about">
            About Gallo Pinto
         </router-link>
       </b-nav-item>
         </b-navbar>
 
     <div id="feed">
-      <feed-container v-bind:cities=cities v-model=currentIndex ref="feed-component"></feed-container>
+      <feed-container v-bind:country=country v-model=currentIndex ref="feed-component"></feed-container>
     </div>
 
     <div id="map">
-      <map-container v-bind:cities=cities v-bind:currentIndex=currentIndex v-on:cityClicked="handleCityClicked"></map-container>
+      <map-container v-bind:country=country v-bind:currentIndex=currentIndex v-on:cityClicked="handleCityClicked"></map-container>
     </div>
-      <b-navbar class="navigation-bottom-navbar-displayed" fixed="bottom">
-                    <b-nav-item>
 
-    <ul  v-scroll-spy-link >
-    <li :id="city.name" v-for="(city, index) in cities" v-bind:data="city"
-    v-bind:key="city.name" v-bind:class="{ active: index == currentIndex }">
-    <a class="navigation-city-menu-city">
-    <span v-if="index!=0">|</span>
-    <span>{{city.name}}</span>
-    </a>
-    </li>
-   </ul>
-    </b-nav-item>
-    <b-nav-item v-on:click="scrollTo(0)">
+      <b-navbar fixed="bottom">
+
+        <b-nav-item class="navigation-city-menu-city active">
+          <b>{{country.name}}</b>
+        </b-nav-item>
+        <b-nav-item>
+
+      <ul  v-scroll-spy-link >
+      <li :id="city.name" v-for="(city, index) in country.cities" v-bind:data="city"
+      v-bind:key="city.name" v-bind:class="{ active: index == currentIndex }">
       <a class="navigation-city-menu-city">
-      <span>Go to the top</span>
-      <span> ↑</span>
-    </a>
-  </b-nav-item>
-  </b-navbar>
+      <span v-if="index!=0">|</span>
+      <span>{{city.name}}</span>
+      </a>
+      </li>
+     </ul>
+      </b-nav-item>
+
+      <b-nav-item v-on:click="scrollTo(0)">
+        <a class="navigation-city-menu-city">
+        <span>Go to the top</span>
+        <span> ↑</span>
+        </a>
+    </b-nav-item>
+    </b-navbar>
 
   </div>
 </template>
@@ -59,10 +65,6 @@ export default {
   },
   data: function () {
     return {
-      cities: {
-        value: [],
-        type: Array
-      },
       cityMenuVisible: false,
       currentIndex: 0,
       clickedCity: 0,
@@ -75,8 +77,11 @@ export default {
     }
   },
   computed: {
-    displayMenu: function () {
-      return this.currentIndex === 0
+    country: function () {
+      const name = this.$route.params.country
+      const c = require('../../static/navigation/data.json').countries[name];
+      c.name = name
+      return c
     },
     menuIsBig: function () {
       if (this.lastScrollYPosition < 100) {
@@ -104,9 +109,6 @@ export default {
       this.scroll.lastCheck = timeStamp
       this.scroll.lastScrollYPosition = position
     }
-  },
-  created: function () {
-    this.cities = require('../../static/navigation/data.json').countries.nicaragua.cities
   },
   mounted: function () {
     this.scrollTo = this.$refs['feed-component'].$scrollTo
@@ -146,8 +148,12 @@ body {
   position: fixed;
   right: 0;
 }
-
+.nav-link ul {
+  display: inline-block;
+}
 .navigation-city-menu-city {
+  text-transform: uppercase;
+  vertical-align: middle;
   font-size: 10px;
   font-weight: 100;
 }
@@ -156,10 +162,10 @@ body {
   transition: font-size 0.1s;
 }
 .active .navigation-city-menu-city {
-  font-size: 13px;
+  font-weight: bold;
 }
 .navigation-city-menu-city:hover {
-  font-size: 13px;
+  text-decoration: underline !important;
 }
 
 @media only screen and (max-width: 600px) {

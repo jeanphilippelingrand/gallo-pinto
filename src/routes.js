@@ -1,5 +1,5 @@
 import Navigation from './pages/Navigation'
-import GalloPinto from './pages/GalloPinto'
+import About from './pages/About'
 import Home from './pages/Home'
 import Slideshow from './pages/Slideshow'
 
@@ -13,11 +13,11 @@ const routes = [
     component: Navigation
   },
   {
-    path: '/gallo-pinto',
-    component: GalloPinto
+    path: '/about',
+    component: About
   },
   {
-    path: '/slideshow',
+    path: '/slideshow/:country/:city/:id',
     component: Slideshow
   }
 ]

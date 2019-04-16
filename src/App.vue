@@ -28,7 +28,7 @@ ul {
 }
 a {
   cursor: pointer;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 /* unvisited link */
 a:link {
@@ -43,7 +43,7 @@ a:visited {
 /* mouse over link */
 a:hover {
   color: black;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 /* selected link */

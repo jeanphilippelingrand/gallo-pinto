@@ -33,9 +33,8 @@
 export default {
   name: 'map-container',
   props: {
-    cities: {
-      type: Array,
-      value: []
+    country: {
+      type: Object
     },
     currentIndex: {
       type: Number,
@@ -44,11 +43,15 @@ export default {
   },
   data () {
     return {
-      zoom: this.cities ? this.cities[0].zoom : 7,
+      zoom: this.country.cities ? this.country.cities[0].zoom : 7,
       animatedCity: {
         center: {
-          lat: 12.8649313,
-          lng: -87.2683805
+          lat: {
+            type: Number
+          },
+          lng: {
+            type: Number
+          }
         }
       }
     }
@@ -58,13 +61,18 @@ export default {
       this.$emit('cityClicked', index)
     }
   },
+  created: function() {
+    this.animatedCity.center.lat = this.country.lat;
+    this.animatedCity.center.lng = this.country.lng;
+    this.zoom = this.country.zoom;
+  },
   computed: {
     currentCity: function () {
-      return this.cities ? this.cities[this.currentIndex] : {}
+      return this.country.cities ? this.country.cities[this.currentIndex] : {}
     },
     markers: function () {
-      return this.cities
-        ? this.cities.map(city => {
+      return this.country.cities
+        ? this.country.cities.map(city => {
           return {
             city: city,
             position: { lat: city.lat, lng: city.lng }

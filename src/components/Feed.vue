@@ -1,7 +1,7 @@
 <template>
   <div>
       <ul style="display:none;" v-scroll-spy-active>
-        <li :id="city.name" class="title" v-for="city in cities" v-bind:data="city"
+        <li :id="city.name" class="title" v-for="city in country.cities" v-bind:data="city"
             v-bind:key="city.name">
             <a>
                 <h2>{{city.name}}</h2>
@@ -10,7 +10,7 @@
     </ul>
 
     <ul id="scroll-spy-container" v-scroll-spy:data="{ data: 'currentIndex' }">
-      <li :id="city.name+'?lat='+city.lat+'&lng='+city.lng" class="pic" v-for="city in cities" v-bind:data="city"
+      <li :id="city.name+'?lat='+city.lat+'&lng='+city.lng" class="pic" v-for="city in country.cities" v-bind:data="city"
            v-bind:key="city.name">
             <h1>{{city.name}}</h1>
              <p class="city-title">{{city.title && (city.title.en || city.title.fr)}}
@@ -34,8 +34,8 @@ export default {
     pic: Picture
   },
   props: {
-    cities: {
-      type: Array
+    country: {
+      type: Object
     }
   },
   data: function () {
@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     handleImageClick (city, indexPic) {
-      this.$router.push(`/slideshow?city=${city.name}&photoId=${indexPic}`)
+      this.$router.push(`/slideshow/${this.country.name}/${city.name}/${indexPic}`)
     }
   },
   watch: {

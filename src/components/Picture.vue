@@ -3,7 +3,8 @@
      <div class="picture-button-container" v-if="mouseOver">
       <button  v-on:click="handleCloseBtnClicked()" class="picture-fullscreen-btn"/>
     </div>
-<img v-lazy="imgURL" v-on:mouseover="mouseOver=true" v-on:mouseleave="mouseOver=false">
+
+    <img v-bind:alt="pic.alt" v-lazy="imgURL" v-on:mouseover="mouseOver=true" v-on:mouseleave="mouseOver=false">
 
   <p class="photo-title">{{pic.title && (pic.title.en || pic.title.fr)}}</p>
 

@@ -7,9 +7,9 @@
   <div id="content">
     <header>
           <h1>Gallo Pinto</h1>
-          <span id="conversion-text">Gallo Pinto is a typical meal from Central America, made from simple things it's a light meal but enough to let you enjoy this great region. I liked traveling with this is mind: enough but not too much.</span>
+          <span id="conversion-text">Gallo Pinto is a typical meal from Central America, made from simple things it's a light meal but enough to let you enjoy this great region. I like traveling with this is mind: enough but not too much.</span>
           <span id="conversion-text">Discover some of the regions I've went through my travel pictures.</span>
-          <i>Start your journey by selecting the region you'd liked to visit through the map bellow.</i>
+          <i>Start your journey by selecting the region you'd liked to visit through the map below.</i>
     </header>
 
       <div class="map-wrapper">

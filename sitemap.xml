@@ -6,12 +6,27 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://gallo-pinto.com/travel</loc>
+    <loc>http://gallo-pinto.com/travel/costa-rica</loc>
 <lastmod>2018-03-26T12:41:05+00:00</lastmod>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>http://gallo-pinto.com/travel/nicaragua</loc>
+    <lastmod>2018-03-26T12:41:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://gallo-pinto.com/travel/california</loc>
+    <lastmod>2018-03-26T12:41:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://gallo-pinto.com/travel/las-vegas</loc>
+    <lastmod>2018-03-26T12:41:05+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
     <url>
-    <loc>http://gallo-pinto.com/gallo-pinto</loc>
+    <loc>http://gallo-pinto.com/about</loc>
 <lastmod>2018-03-26T12:41:05+00:00</lastmod>
     <priority>0.5</priority>
   </url>

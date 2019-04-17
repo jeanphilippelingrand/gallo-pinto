@@ -117,6 +117,9 @@ const webpackConfig = merge(baseWebpackConfig, {
       }, {
         from: path.resolve(__dirname, '../_redirects'),
         to: path.resolve(__dirname, '../dist')
+      }, {
+        from: path.resolve(__dirname, '../sitemap.xml'),
+        to: path.resolve(__dirname, '../dist')
       }
     ])
   ]

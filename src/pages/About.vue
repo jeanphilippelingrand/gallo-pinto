@@ -12,18 +12,17 @@
         </router-link>
       </b-nav-item>
     </b-navbar>
-    <h1>Gallo Pinto</h1>
-    <img id="img" src="http://res.cloudinary.com/dzcoopyjp/image/upload/c_scale,w_2048/gallo%20pinto/salinas grandes/7.JPG">
     <h1>About this meal</h1>
+    <img id="img" src="http://res.cloudinary.com/dzcoopyjp/image/upload/c_scale,w_2048/gallo%20pinto/salinas grandes/7.JPG">
     <p>The Gallo Pinto is a typical meal from Nicaragua made only from beans and rice. This simple combination is a great analogy of the way to enjoy the country. Less you have, less you can loose. It is also a great way to start your day with, gives you energy to discover those great central america countries.</p>
-    <b>One of the infinite recipes</b>
+    <b>Here is one of the infinite recipes</b>
     <ol>
       <li>Fry the garlic, pepper, cilantro and onion in a large frying pan for 2 to 5 minutes,</li>
       <li>Add the cooked beans</li>
       <li>Add the rice let it cook for 20 minutes</li>
     </ol>
     <h1>About the pictures</h1>
-    <p>All photos done by <b>Olympus M.Zuiko Digital 14-42mm F3.5-5.6 II R</b></p>
+    <p>All photos done by <b>Olympus PEN Mini / E-PM1</b> with the lens <b>Olympus M.Zuiko Digital 14-42mm F3.5-5.6 II R</b></p>
     <h1>About the code</h1>
     <p><a href="https://github.com/jeanphilippelingrand/gallo-pinto">Everything is open source on github</a></p>
     <h1>About me</h1>
@@ -43,7 +42,7 @@
     padding-right: 20%;
     height: 100%;
     margin: 100ppx;
-    font-size: 20px;
+    font-size: 12px;
     text-align: justify;
     letter-spacing: 2px;
   }
@@ -62,14 +61,14 @@
     margin-top: 50px;
     padding: 4px;
     padding-left: 10px;
-    font-size: 100px;
+    font-size: 50px;
     color: grey;
     font-weight: 60;
   }
 
   h2 {
     font-weight: 100;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 30px;
     letter-spacing: 2px;
     font-weight: 100;

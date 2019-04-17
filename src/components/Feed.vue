@@ -9,7 +9,7 @@
         </li>
     </ul>
 
-    <ul id="scroll-spy-container" v-scroll-spy:data="{ data: 'currentIndex' }">
+    <ul id="scroll-spy-container" v-scroll-spy:data="{ data: 'scrollSpyIndex' }">
       <li :id="city.name+'?lat='+city.lat+'&lng='+city.lng" class="pic" v-for="city in country.cities" v-bind:data="city"
            v-bind:key="city.name">
             <h1>{{city.name}}</h1>
@@ -40,12 +40,19 @@ export default {
   },
   data: function () {
     return {
-      currentIndex: {
-        type: Number
-      }
+      scrollSpyIndex: 0,
+      isOnTop: true
+    }
+  },
+  computed: {
+    currentIndex: function() {
+      return this.isOnTop ? -1 : this.scrollSpyIndex
     }
   },
   methods: {
+    handleScroll () {
+      this.isOnTop = window.scrollY == 0
+    },
     handleImageClick (city, indexPic) {
       this.$router.push(`/slideshow/${this.country.name}/${city.name}/${indexPic}`)
     }
@@ -54,6 +61,12 @@ export default {
     currentIndex: function (newVal, oldVal) {
       this.$emit('input', newVal)
     }
+  },
+  created: function () {
+    window.addEventListener('wheel', this.handleScroll)
+  },
+  destroyed: function () {
+    window.removeEventListener('wheel', this.handleScroll)
   }
 }
 </script>

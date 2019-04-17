@@ -281,7 +281,7 @@
     "costa-rica": {
       "lat": 10.6714,
       "lng": -85.0125,
-      "zoom": 7.5,
+      "zoom": 7,
       "cities": [
         {
           "name": "La Fortuna",
@@ -313,7 +313,7 @@
               "title": {
                 "en": "Canopy"
               },
-              "tags": ["nature", "canopy"]
+              "tags": ["nature", "vegetation"]
             },
             {
               "url": "/costa rica/tenorio/3.JPG",
@@ -359,145 +359,172 @@
         {
           "name": "Playa Hermosa",
           "title": {
-            "en": "Closest beach from Liberia. "
+            "en": "Closest beach from Liberia. You're not the only white guy living there!"
           },
           "lat": 10.57245,
           "lng": -85.676053,
-          "zoom": 9,
+          "zoom": 10,
           "pictures": [{
             "url": "/costa rica/playa hermosa/1.JPG",
-            "alt": "Gallo pinto from costa rica",
+            "alt": "Painting of a couple sharing a smoothie",
             "title": {
-              "en": "Another Gallo Pinto"
+              "en": "Some freshness in this hot country"
             },
-            "tags": ["gallo pinto", "food"]
+            "tags": ["painting", "couple", "food"]
           },
           {
             "url": "/costa rica/playa hermosa/2.JPG",
-            "alt": "Gallo pinto from costa rica",
+            "alt": "A tree on the beach",
             "title": {
-              "en": "Canopy"
+              "en": "Shades are your friends"
             },
-            "tags": ["nature", "canopy"]
+            "tags": ["nature", "ocean", "beach", "tree"]
           },
           {
             "url": "/costa rica/playa hermosa/3.JPG",
-            "alt": "Gallo pinto from costa rica",
+            "alt": "A lezard on the sand",
             "title": {
-              "en": "Another Gallo Pinto"
+              "en": "This guy"
             },
-            "tags": ["gallo pinto", "food"]
+            "tags": ["nature", "animal"]
           },
           {
             "url": "/costa rica/playa hermosa/4.JPG",
-            "alt": "Gallo pinto from costa rica",
+            "alt": "Restaurant front",
             "title": {
-              "en": "Canopy"
+              "en": "Another casado"
             },
-            "tags": ["nature", "canopy"]
+            "tags": ["city", "restaurant"]
           },
           {
             "url": "/costa rica/playa hermosa/5.JPG",
-            "alt": "Gallo pinto from costa rica",
+            "alt": "A girl making coffee",
             "title": {
-              "en": "Another Gallo Pinto"
+              "en": "You must be patient for this one"
             },
-            "tags": ["gallo pinto", "food"]
+            "tags": ["people", "coffee"]
           },
           {
             "url": "/costa rica/playa hermosa/6.JPG",
-            "alt": "Gallo pinto from costa rica",
+            "alt": "Guy fishing in the ocean",
             "title": {
-              "en": "Canopy"
+              "en": "Looking for sardines"
             },
-            "tags": ["nature", "canopy"]
+            "tags": ["fishing", "ocean"]
           },
           {
             "url": "/costa rica/playa hermosa/7.JPG",
-            "alt": "Gallo pinto from costa rica",
+            "alt": "A bird walking on the sand",
             "title": {
-              "en": "Another Gallo Pinto"
+              "en": "Just chilling"
             },
-            "tags": ["gallo pinto", "food"]
+            "tags": ["beach", "sand"]
           },
           {
             "url": "/costa rica/playa hermosa/8.JPG",
-            "alt": "Gallo pinto from costa rica",
+            "alt": "Sunset",
             "title": {
-              "en": "Canopy"
+              "en": "Shades of sunset"
             },
-            "tags": ["nature", "canopy"]
+            "tags": ["ocean", "sunset"]
           }]
       },
         {
           "name": "Tamarindo",
           "title": {
-            "en": ""
+            "en": "Tamarindo is an fluorescent electric city. The gallo pinto life for the day but get ready for the night. No need for seat belt, people there will take you stay safe during your journey."
           },
           "lat": 10.2995374,
           "lng": -85.8437347,
-          "zoom": 9,
-          "pictures": [{
-            "url": "/costa rica/tamarindo/1.JPG",
-            "alt": "Gallo pinto from costa rica",
-            "title": {
-              "en": "Another Gallo Pinto"
+          "zoom": 13,
+          "pictures": [
+            {
+              "url": "/costa rica/tamarindo/1.JPG",
+              "alt": "Tamarindo beach",
+              "title": {
+                "en": "Those palm trees"
+              },
+              "tags": [
+                "beach",
+                "palm trees"
+              ]
             },
-            "tags": ["gallo pinto", "food"]
-          },
             {
               "url": "/costa rica/tamarindo/2.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Sea wood",
               "title": {
-                "en": "Canopy"
+                "en": "Sea wood"
               },
-              "tags": ["nature", "canopy"]
+              "tags": [
+                "nature",
+                "wood"
+              ]
             },
             {
               "url": "/costa rica/tamarindo/3.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Palm tree view from the bottom",
               "title": {
-                "en": "Another Gallo Pinto"
+                "en": "Big guy your are beautify"
               },
-              "tags": ["gallo pinto", "food"]
+              "tags": [
+                "palm trees"
+              ]
             },
             {
               "url": "/costa rica/tamarindo/4.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Sunset with boats",
               "title": {
-                "en": "Canopy"
+                "en": "Sunset number: 14999"
               },
-              "tags": ["nature", "canopy"]
+              "tags": [
+                "beach",
+                "ocean",
+                "sunset"
+              ]
             },
             {
               "url": "/costa rica/tamarindo/5.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Sunset with boats",
               "title": {
-                "en": "Another Gallo Pinto"
+                "en": "Sunset number: 15000"
               },
-              "tags": ["gallo pinto", "food"]
-            },
+              "tags": [
+                "ocean",
+                "sunset"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Samara",
+          "title": {
+            "en": "Small village with a great longboard spot on the left of the beach."
+          },
+          "lat": 9.8820222,
+          "lng": -85.5290361,
+          "zoom": 9,
+          "pictures": [
             {
               "url": "/costa rica/tamarindo/6.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Guys around a boat after a fishing session",
               "title": {
-                "en": "Canopy"
+                "en": "Fresh food coming"
               },
-              "tags": ["nature", "canopy"]
+              "tags": ["people", "ocean", "fishing"]
             },
             {
               "url": "/costa rica/tamarindo/7.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Sunset with sunlight coming through the clouds",
               "title": {
-                "en": "Another Gallo Pinto"
+                "en": "Sunlights"
               },
-              "tags": ["gallo pinto", "food"]
+              "tags": ["beach", "sunset"]
             }]
         },
         {
           "name": "Manuel Antonio",
           "title": {
-            "en": ""
+            "en": "I have not been in the city itself. The park however is great to spend a day chilling at the beach. Those are like paradise."
           },
           "lat": 9.4068743,
           "lng": -84.1549731,
@@ -505,31 +532,31 @@
           "pictures": [
             {
               "url": "/costa rica/Puntarenas/3.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Raccoon approaching",
               "title": {
-                "en": "Another Gallo Pinto"
+                "en": "This guys is gonna check my stuff"
               },
-              "tags": ["gallo pinto", "food"]
+              "tags": ["animal", "beach"]
             },
             {
               "url": "/costa rica/Puntarenas/5.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Monkey on the trees",
               "title": {
-                "en": "Another Gallo Pinto"
+                "en": "This guy too"
               },
-              "tags": ["gallo pinto", "food"]
+              "tags": ["nature", "animal"]
             },
             {
               "url": "/costa rica/Puntarenas/7.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "A tall tree with nice leaves",
               "title": {
-                "en": "Another Gallo Pinto"
+                "en": "Surrounded by trees"
               },
-              "tags": ["gallo pinto", "food"]
+              "tags": ["nature", "trees"]
             },
             {
               "url": "/costa rica/Puntarenas/8.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Vegetation on a tree",
               "title": {
                 "en": "Canopy"
               },
@@ -537,44 +564,44 @@
             },
             {
               "url": "/costa rica/Puntarenas/9.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Butterfly eating",
               "title": {
-                "en": "Canopy"
+                "en": "Nice outfit"
               },
-              "tags": ["nature", "canopy"]
+              "tags": ["nature", "animal"]
             }]
         },
         {
           "name": "Uvita",
           "title": {
-            "en": ""
+            "en": "Once you're there, get you a bike and a surf board. Then live forever."
           },
           "lat": 9.1633231,
           "lng": -83.7380504,
-          "zoom": 9,
+          "zoom": 12.5,
           "pictures": [
             {
               "url": "/costa rica/Puntarenas/6.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Ocean",
               "title": {
-                "en": "Canopy"
+                "en": "Ocean"
               },
-              "tags": ["nature", "canopy"]
+              "tags": ["ocean"]
             },{
             "url": "/costa rica/Puntarenas/1.JPG",
-            "alt": "Gallo pinto from costa rica",
+            "alt": "A pink flower",
             "title": {
-              "en": "Another Gallo Pinto"
+              "en": "Red pink"
             },
-            "tags": ["gallo pinto", "food"]
+            "tags": ["nature", "flower"]
           },
             {
               "url": "/costa rica/Puntarenas/2.JPG",
-              "alt": "Gallo pinto from costa rica",
+              "alt": "Girl's hair in the wind on a boat",
               "title": {
-                "en": "Canopy"
+                "en": "Dora is working"
               },
-              "tags": ["nature", "canopy"]
+              "tags": ["people", "ocean"]
             }]
         }
       ]
@@ -582,16 +609,16 @@
     "las-vegas": {
       "lat": 36.1272897,
       "lng": -115.2847744,
-      "zoom": 9,
+      "zoom": 8,
       "cities": [
         {
           "name": "Las Vegas Strip",
           "title": {
             "en": "City of all the vices. Sex & Money are the bests."
           },
-          "lat": 36.1272897,
-          "lng": -115.2847744,
-          "zoom": 9,
+          "lat": 36.1699412,
+          "lng": -115.1398296,
+          "zoom": 10,
           "pictures": [{
             "url": "/vegas/1.JPG",
             "alt": "The Eiffel Tower from Vegas",
@@ -788,7 +815,7 @@
           },
           "lat": 12.431553,
           "lng": -86.872215,
-          "zoom": 9,
+          "zoom": 11,
           "pictures": [
             {
               "url": "/leon/leon1.JPG",
@@ -860,7 +887,7 @@
           },
           "lat": 12.2678382,
           "lng": -86.8533407,
-          "zoom": 9,
+          "zoom": 11,
           "pictures": [
             {
               "url": "/salinas grandes/1.JPG",
@@ -1029,7 +1056,7 @@
           "name": "Granada",
           "lat": 11.9288488,
           "lng": -85.977309,
-          "zoom": 9,
+          "zoom": 10,
           "pictures": [
             {
               "url": "/granada/1.JPG",
@@ -1086,7 +1113,7 @@
           "name": "San Juan Del Sur",
           "lat": 11.2600024,
           "lng": -85.8857705,
-          "zoom": 9,
+          "zoom": 10,
           "pictures": [
             {
               "url": "/san juan del sur/1.JPG",

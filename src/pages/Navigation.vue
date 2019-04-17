@@ -66,7 +66,7 @@ export default {
   data: function () {
     return {
       cityMenuVisible: false,
-      currentIndex: 0,
+      currentIndex: -1,
       clickedCity: 0,
       scroll: {
         isGoingDown: false,

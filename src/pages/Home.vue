@@ -109,7 +109,7 @@ export default {
 <style scoped>
 
   .map-wrapper {
-    margin-top: 50px;
+    margin-bottom: 70px;
   }
 
   .map {
@@ -181,7 +181,7 @@ export default {
     height: auto;
   }
 
-  .map__hotspot:hover .popup {
+  .popup {
     display: inline-block;
   }
 
@@ -284,8 +284,32 @@ header {
     font-weight: 60;
     font-size: 15px;
   }
-  #conversion-text {
-    width: 100%;
+  .map__hotspot {
+    position: relative;
+    left: inherit !important;
+    right: inherit !important;
+    width: inherit;
+    border-radius: inherit;
+    height: auto;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 10px;
   }
-}
+
+  .popup {
+    height: auto;
+    position: relative;
+    bottom: inherit;
+    right: inherit;
+    left: inherit;
+    width: inherit;
+    opacity: 1 !important;
+    display: block;
+  }
+
+  .popup__inner {
+    display: block;
+  }
+
+  }
 </style>

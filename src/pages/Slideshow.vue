@@ -107,7 +107,10 @@ export default {
 </script>
 
 <style>
-#slideshow-container {
+
+  html, body {margin: 0; height: 100%; overflow: hidden}
+
+  #slideshow-container {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -130,6 +133,8 @@ export default {
   position: relative;
   text-align: left;
   height: 20%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 #close_btn {
@@ -141,7 +146,6 @@ export default {
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  margin-right: 10%;
   opacity: 0.2;
 }
 #close_btn:hover {
@@ -192,13 +196,24 @@ export default {
 .VueCarousel, .VueCarousel-wrapper, .VueCarousel-inner {
   height: 100% !important;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px), screen and (max-height: 600px) {
   #slideshow-city-title {
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .slideshow-arrow {
     display: none;
+  }
+
+  #slideshow-container {
+    padding: 0;
+  }
+
+  .slideshow-image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    max-width: inherit;
   }
 }
 </style>

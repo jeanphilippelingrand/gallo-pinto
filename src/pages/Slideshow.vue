@@ -6,11 +6,13 @@
       </transition>
       <button  v-on:click="handleCloseBtnClicked()" id="close_btn"/>
     </div>
+    <div id="slideshow-caroussel-container">
     <carousel :perPage="1" :paginationSize="5" :navigateTo="currentIndex" :paginationEnabled="false">
     <slide  v-for="image in images" v-bind:key="image.src">
         <img class="slideshow-image" :src=image.src>
     </slide>
   </carousel>
+    </div>
   <button v-if="currentIndex>0" v-on:click="currentIndex--" id="slideshow-left-arrow" class="slideshow-arrow"></button>
   <button  v-if="currentIndex<(images.length-1)" v-on:click="currentIndex++"  id="slideshow-right-arrow" class="slideshow-arrow"></button>
   </div>
@@ -124,9 +126,10 @@ export default {
 }
 
 #slideshow-button-bar {
+  padding-top: 2%;
   position: relative;
   text-align: left;
-  margin-bottom: 50px;
+  height: 20%;
 }
 
 #close_btn {
@@ -175,6 +178,19 @@ export default {
 
 .slideshow-arrow:hover {
   opacity: 0.3;
+}
+
+.VueCarousel-slide{
+  height: 100%;
+}
+
+#slideshow-caroussel-container {
+  padding-bottom: 10px;
+  height: 80%;
+}
+
+.VueCarousel, .VueCarousel-wrapper, .VueCarousel-inner {
+  height: 100% !important;
 }
 @media only screen and (max-width: 600px) {
   #slideshow-city-title {

@@ -106,11 +106,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
-  html, body {margin: 0; height: 100%; overflow: hidden}
-
-  #slideshow-container {
+<style>
+#slideshow-container {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -132,9 +129,7 @@ export default {
   padding-top: 2%;
   position: relative;
   text-align: left;
-  height: 15%;
-  padding-left: 2%;
-  padding-right: 2%;
+  height: 20%;
 }
 
 #close_btn {
@@ -146,6 +141,7 @@ export default {
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
+  margin-right: 10%;
   opacity: 0.2;
 }
 #close_btn:hover {
@@ -190,7 +186,7 @@ export default {
 
 #slideshow-caroussel-container {
   padding-bottom: 10px;
-  height: 85%;
+  height: 80%;
 }
 
 .VueCarousel, .VueCarousel-wrapper, .VueCarousel-inner {
@@ -203,17 +199,6 @@ export default {
 
   .slideshow-arrow {
     display: none;
-  }
-
-  #slideshow-container {
-    padding: 0;
-  }
-
-  .slideshow-image {
-    width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    max-width: inherit;
   }
 }
 </style>

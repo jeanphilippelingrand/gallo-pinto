@@ -7,9 +7,9 @@
   <div id="content">
     <header>
           <h1>Gallo Pinto</h1>
-          <span id="conversion-text">Gallo Pinto is a typical meal from Central America, made from simple things it's a light meal but enough to let you enjoy this great region. I like traveling with this is mind: enough but not too much.</span>
-          <span id="conversion-text">Discover some of the regions I've went through my travel pictures.</span>
-          <i>Start your journey by selecting the region you'd liked to visit through the map below.</i>
+          <span class="conversion-text">Gallo Pinto is a typical meal from Central America, made from simple things it's a light meal but enough to let you enjoy this great region. I like traveling with this is mind: enough but not too much.</span>
+          <span class="conversion-text">Discover some of the regions I've went through my travel pictures.</span>
+          <spam>Start your journey by selecting the region you'd liked to visit through the map below.</spam>
     </header>
 
       <div class="map-wrapper">
@@ -171,7 +171,7 @@ export default {
     border-radius: 50%;
   }
 
-  .map__hotspot:hover {
+  .map__hotspot:hover .map__hotspot:active{
     background: #e92174;
   }
 
@@ -250,9 +250,15 @@ h3 {
 }
 
 header {
-  padding: 50px;
+  padding: 5%;
+  color: #ecf5ff;
 }
-#conversion-text {
+
+header span {
+  margin-bottom: 5px;
+}
+
+.conversion-text {
   font-style: italic;
   display: block;
   width: 70%;
@@ -286,8 +292,10 @@ header {
   }
   .map__hotspot {
     position: relative;
-    left: inherit !important;
-    right: inherit !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     width: inherit;
     border-radius: inherit;
     height: auto;

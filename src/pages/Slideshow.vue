@@ -106,7 +106,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
   html, body {margin: 0; height: 100%; overflow: hidden}
 
@@ -132,7 +132,7 @@ export default {
   padding-top: 2%;
   position: relative;
   text-align: left;
-  height: 20%;
+  height: 15%;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -190,7 +190,7 @@ export default {
 
 #slideshow-caroussel-container {
   padding-bottom: 10px;
-  height: 80%;
+  height: 85%;
 }
 
 .VueCarousel, .VueCarousel-wrapper, .VueCarousel-inner {

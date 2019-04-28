@@ -111,20 +111,10 @@ export default {
   width: 100%;
   text-align: center;
   background-color: #e4ddb60a;
+  padding-right: 5%;
+  padding-left: 5%;
 }
-.VueCarousel {
-  height: 85%;
-  width: 100%;
-}
-.VueCarousel-wrapper {
-  height: 100%;
-}
-.VueCarousel-inner {
-  height: 100%;
-}
-.VueCarousel-slide {
-  height: 100%;
-}
+
 .slideshow-image {
   position: relative;
   display: inline-block;
@@ -136,7 +126,7 @@ export default {
 #slideshow-button-bar {
   position: relative;
   text-align: left;
-  height: 10%;
+  margin-bottom: 50px;
 }
 
 #close_btn {
@@ -155,7 +145,7 @@ export default {
   opacity: 1;
 }
 #slideshow-city-title {
-  margin-left: 10%;
+  max-width: 80%;
   font-size: 35px;
   text-align: left;
   font-weight: 100;
@@ -169,7 +159,6 @@ export default {
   height: 50px;
   width: 50px;
   top: calc(50% - 25px);
-  width: 50px;
   background-image: url("../assets/icon_left_arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -188,6 +177,10 @@ export default {
   opacity: 0.3;
 }
 @media only screen and (max-width: 600px) {
+  #slideshow-city-title {
+    font-size: 20px;
+  }
+
   .slideshow-arrow {
     display: none;
   }

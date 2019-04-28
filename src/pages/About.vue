@@ -78,12 +78,16 @@
     font-size: 12px;
     font-weight: 100;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px), screen and (max-height: 600px) {
+    #body{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
     h1 {
-      font-size: 30px;
+      font-size: 20px;
     }
     h2 {
-      font-size: 20px;
+      font-size: 15px;
     }
     h3 {
       padding: 10px;

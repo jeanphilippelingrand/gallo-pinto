@@ -113,19 +113,19 @@ export default {
   width: 100%;
   text-align: center;
   background-color: #e4ddb60a;
-  padding-right: 5%;
-  padding-left: 5%;
 }
 
 .slideshow-image {
   position: relative;
   display: inline-block;
   text-align: center;
-  max-width: 90%;
+  max-width: 100%;
   max-height: 100%;
 }
 
 #slideshow-button-bar {
+  padding-right: 5%;
+  padding-left: 5%;
   padding-top: 2%;
   position: relative;
   text-align: left;
@@ -141,7 +141,6 @@ export default {
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  margin-right: 10%;
   opacity: 0.2;
 }
 #close_btn:hover {

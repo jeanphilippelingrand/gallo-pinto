@@ -60,6 +60,7 @@ export default {
       this.$emit('cityClicked', index)
     },
     setMapCenter: function (region, animated, oldPosition) {
+      // eslint-disable-next-line no-undef
       if (!TWEEN || !animated) {
         this.zoom = region.zoom
         return (this.animatedCity = {
@@ -73,12 +74,14 @@ export default {
       var vm = this
 
       function animate () {
+        // eslint-disable-next-line no-undef
         if (TWEEN.update()) {
           requestAnimationFrame(animate)
         }
       }
-
+      // eslint-disable-next-line no-undef
       new TWEEN.Tween({ lat: oldPosition.lat, lng: oldPosition.lng })
+      // eslint-disable-next-line no-undef
         .easing(TWEEN.Easing.Quadratic.Out)
         .to({ lat: region.lat, lng: region.lng }, 2000)
         .onUpdate(function () {

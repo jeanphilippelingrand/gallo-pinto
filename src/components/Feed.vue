@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     handleScroll () {
-      this.isOnTop = window.scrollY == 0
+      this.isOnTop = window.scrollY === 0
     },
     handleImageClick (city, indexPic) {
       this.$router.push(`/slideshow/${this.country.name}/${city.name}/${indexPic}`)

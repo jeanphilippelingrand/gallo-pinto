@@ -97,11 +97,10 @@ export default {
   },
   mounted: function () {
     const {city, country, id} = this.$route.params
-    console.log(this.$route.params);
+    console.log(this.$route.params)
     this.currentIndex = this.images.findIndex(image => {
       return image.city === city && image.country === country && image.id === Number(id)
     })
-
   }
 }
 </script>

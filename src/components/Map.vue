@@ -61,7 +61,7 @@ export default {
     },
     setMapCenter: function (region, animated, oldPosition) {
       if (!TWEEN || !animated) {
-        this.zoom = region.zoom;
+        this.zoom = region.zoom
         return (this.animatedCity = {
           center: {
             lat: region.lat,
@@ -103,7 +103,7 @@ export default {
   computed: {
     currentCity: function () {
       if (this.currentIndex > -1) {
-       return this.country.cities[this.currentIndex]
+        return this.country.cities[this.currentIndex]
       } else {
         return this.country
       }

@@ -45,7 +45,7 @@ export default {
     }
   },
   computed: {
-    currentIndex: function() {
+    currentIndex: function () {
       return this.isOnTop ? -1 : this.scrollSpyIndex
     }
   },

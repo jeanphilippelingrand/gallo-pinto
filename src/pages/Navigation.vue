@@ -79,7 +79,7 @@ export default {
   computed: {
     country: function () {
       const name = this.$route.params.country
-      const c = require('../../static/navigation/data.json').countries[name];
+      const c = require('../../static/navigation/data.json').countries[name]
       c.name = name
       return c
     },

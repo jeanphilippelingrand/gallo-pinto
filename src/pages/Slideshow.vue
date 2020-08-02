@@ -70,9 +70,6 @@ export default {
     this.setupKeyboardListener()
   },
   methods: {
-    getHD: function (image) {
-      window.open(this.getImageURL(image.picture.url, true), '_blank')
-    },
     getImagesMap: function (country, city, picture, index) {
       let src = this.getImageURL(picture.url)
 
@@ -97,11 +94,9 @@ export default {
   },
   mounted: function () {
     const {city, country, id} = this.$route.params
-    console.log(this.$route.params);
     this.currentIndex = this.images.findIndex(image => {
       return image.city === city && image.country === country && image.id === Number(id)
     })
-
   }
 }
 </script>

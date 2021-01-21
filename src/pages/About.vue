@@ -14,7 +14,7 @@
     </b-navbar>
     <h1>About this meal</h1>
     <img id="img" src="http://res.cloudinary.com/dzcoopyjp/image/upload/c_scale,w_2048/gallo%20pinto/salinas grandes/7.JPG">
-    <p>The Gallo Pinto is a typical meal from Nicaragua made only from beans and rice. This simple combination is a great analogy of the way to enjoy the country. Less you have, less you can loose. It is also a great way to start your day with, gives you energy to discover those great central america countries.</p>
+    <p>The Gallo Pinto is a typical meal from Nicaragua made only from beans and rice. This simple combination is a great analogy of the way to enjoy the country. Less you have, less you can lose. It is also a great way to start your day with, gives you energy to discover those great central america countries.</p>
     <b>Here is one of the infinite recipes</b>
     <ol>
       <li>Fry the garlic, pepper, cilantro and onion in a large frying pan for 2 to 5 minutes,</li>
